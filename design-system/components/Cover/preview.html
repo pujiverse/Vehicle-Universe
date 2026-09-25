@@ -1,0 +1,56 @@
+<!-- @dsCard height=288 -->
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Pujiverse Transport</title>
+<style>
+  html, body { margin:0; height:100%; }
+  body { background:var(--surface-000); color:var(--ink); font-family:var(--font-sans); overflow:hidden; }
+  .cover { position:relative; height:288px; overflow:hidden; }
+  .art { position:absolute; top:0; left:480px; width:480px; height:288px; overflow:hidden; }
+  .art svg { display:block; width:480px; height:288px; }
+  .violet { fill:var(--brand-violet); }
+  .cyan { fill:var(--brand-cyan); }
+  .magenta { fill:var(--brand-magenta); }
+  .haze { fill:var(--brand-haze); }
+  .glow { fill:var(--brand-glow); }
+  .blk { rx:var(--radius-card); }
+  .ring { fill:none; stroke-width:3; }
+  .ring.m { stroke:var(--brand-magenta); }
+  .ring.g { stroke:var(--brand-glow); }
+  .ring.c { stroke:var(--brand-cyan); }
+  .words { position:absolute; left:var(--space-6); bottom:var(--space-6); max-width:440px; }
+  .name { margin:0; font-family:var(--font-display); font-size:72px; line-height:.95; font-weight:700; letter-spacing:.02em; color:var(--ink); }
+  .tag { margin:var(--space-3) 0 0 2px; font-size:14px; line-height:20px; color:var(--ink-muted); }
+</style>
+</head>
+<body>
+<div class="cover">
+<div class="art" aria-hidden="true">
+<svg viewBox="0 0 480 288" width="480" height="288">
+<!--
+  blocks      brand-violet 160×256 slab bled off the top (the wordmark's colour, largest) · brand-cyan 128×176 · brand-magenta 144×120 and brand-haze 144×96 bled off the right · brand-glow disc r=32 as the planet: ≈40% of 960×288
+  arrangement one tall slab with satellites, bottoms on one line space-6 above the edge, space-4 gutters
+  pattern     the orbit: a literal motif from the logo's ring around the P — three tilted elliptical rings (magenta, glow, cyan) circling the glow disc and crossing the blocks
+  scales      sides in space-4 multiples; gutters space-4; corners radius-card; disc radius-pill; ring stroke 3px
+-->
+<rect class="violet blk" x="16" y="-16" width="160" height="272" rx="14"/>
+<rect class="cyan blk" x="192" y="80" width="128" height="176" rx="14"/>
+<rect class="magenta blk" x="336" y="16" width="160" height="120" rx="14"/>
+<rect class="haze blk" x="336" y="152" width="160" height="104" rx="14"/>
+<g transform="rotate(-16 256 136)">
+  <ellipse class="ring m" cx="256" cy="136" rx="232" ry="64"/>
+  <ellipse class="ring g" cx="256" cy="136" rx="168" ry="44"/>
+  <ellipse class="ring c" cx="256" cy="136" rx="104" ry="26"/>
+</g>
+<circle class="glow" cx="256" cy="136" r="32"/>
+</svg>
+</div>
+<div class="words">
+<h1 class="name">Pujiverse Transport</h1>
+<p class="tag">Every vehicle, from bicycles to rockets.</p>
+</div>
+</div>
+</body>
+</html>

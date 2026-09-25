@@ -1,0 +1,12 @@
+<!-- @dsCard group="Navigation" height=64 -->
+<!doctype html>
+<html>
+<head><meta charset="utf-8"><title>Breadcrumb — preview</title></head>
+<body>
+<div id="root"></div>
+<script>
+  var P = window.Pujiverse, h = React.createElement;
+  ReactDOM.createRoot(document.getElementById('root')).render(h('div', { className: 'pv-row' }, h(P.Breadcrumb, { items: [ { label: 'Home', href: '#/' }, { label: 'Land', href: '#/', domain: 'Land' }, { label: 'Sedan / Coupe / Hatchback', href: '#/type/VT08', domain: 'Land' }, { label: 'Toyota', href: '#/type/VT08/brand/B026', domain: 'Land' }, { label: 'Corolla' } ] })));
+</script>
+</body>
+</html>

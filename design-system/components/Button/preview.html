@@ -1,0 +1,17 @@
+<!-- @dsCard group="Actions" height=80 -->
+<!doctype html>
+<html>
+<head><meta charset="utf-8"><title>Button — preview</title></head>
+<body>
+<div id="root"></div>
+<script>
+  var P = window.Pujiverse, h = React.createElement;
+  ReactDOM.createRoot(document.getElementById('root')).render(h('div', { className: 'pv-row' },
+    h(P.Button, { variant: 'primary' }, 'Add to compare'),
+    h(P.Button, null, 'Next product'),
+    h(P.Button, { variant: 'ghost' }, 'Back'),
+    h(P.Button, { size: 'sm' }, 'Reset view'),
+    h(P.Button, { disabled: true }, 'Compare full')));
+</script>
+</body>
+</html>

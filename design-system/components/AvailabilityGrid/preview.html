@@ -1,0 +1,12 @@
+<!-- @dsCard group="Data" height=240 -->
+<!doctype html>
+<html>
+<head><meta charset="utf-8"><title>AvailabilityGrid — preview</title></head>
+<body>
+<div id="root"></div>
+<script>
+  var P = window.Pujiverse, h = React.createElement;
+  ReactDOM.createRoot(document.getElementById('root')).render(h('div', { style: { padding: 16 } }, h(P.AvailabilityGrid, { regions: {"North America": "Widely available", "Latin America": "Widely available", "Europe (EU/EEA)": "Widely available", "United Kingdom": "Widely available", "Middle East": "Not available", "Africa": "Limited / select countries", "India & South Asia": "Limited / select countries", "China": "Not available", "Japan & Korea": "Widely available", "Southeast Asia": "Widely available", "Oceania": "Widely available"}, note: 'Sample data mixing all three states.' })));
+</script>
+</body>
+</html>

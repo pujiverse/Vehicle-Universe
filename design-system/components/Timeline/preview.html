@@ -1,0 +1,12 @@
+<!-- @dsCard group="Data" height=220 -->
+<!doctype html>
+<html>
+<head><meta charset="utf-8"><title>Timeline — preview</title></head>
+<body>
+<div id="root"></div>
+<script>
+  var P = window.Pujiverse, h = React.createElement;
+  ReactDOM.createRoot(document.getElementById('root')).render(h('div', { style: { padding: 16, maxWidth: 520 } }, h(P.Timeline, { items: [{"year": "1966", "event": "Corolla launched in Japan"}, {"year": "1968", "event": "US launch"}, {"year": "1997", "event": "world's best-selling nameplate"}, {"year": "2019", "event": "12th gen on TNGA platform"}], highlight: '1997' })));
+</script>
+</body>
+</html>

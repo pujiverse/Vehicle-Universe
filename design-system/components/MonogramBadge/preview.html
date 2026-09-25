@@ -1,0 +1,16 @@
+<!-- @dsCard group="Brand" height=140 -->
+<!doctype html>
+<html>
+<head><meta charset="utf-8"><title>MonogramBadge — preview</title></head>
+<body>
+<div id="root"></div>
+<script>
+  var P = window.Pujiverse, h = React.createElement;
+  ReactDOM.createRoot(document.getElementById('root')).render(h('div', { className: 'pv-row', style: { gap: 32 } },
+    h(P.MonogramBadge, { name: 'Toyota', monogram: 'TO', color: 'hsl(74, 55%, 42%)' }),
+    h(P.MonogramBadge, { name: 'Airbus', monogram: 'AI', color: 'hsl(258, 55%, 42%)' }),
+    h(P.MonogramBadge, { name: 'Trek', monogram: 'TR', color: 'hsl(356, 55%, 42%)', size: 48 }),
+    h(P.MonogramBadge, { name: 'Honda', monogram: 'HO', color: 'hsl(54, 55%, 42%)', size: 40, showName: false })));
+</script>
+</body>
+</html>
