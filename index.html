@@ -1,0 +1,1119 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="description" content="Vehicle Universe by Pujiverse: explore 59,000+ vehicle models, from bicycles to rockets, with credited Wikimedia Commons photos.">
+<style>html,body{margin:0}img{max-width:100%}[hidden]{display:none!important}</style>
+</head>
+<body>
+<title>Vehicle Universe</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap">
+<style>
+/* Pujiverse Transport design system: tokens */
+:root{--brand-space:#0f0c21;--brand-haze:#21214b;--brand-cyan:#47abd8;--brand-glow:#a6e5f9;--brand-periwinkle:#5a74c4;--brand-magenta:#c560d1;--brand-violet:#4b3582;--surface-000:#0f0c21;--surface-100:#161330;--surface-200:#1e1a3f;--surface-300:#2a2656;--border:#383366;--border-strong:#7a75b2;--ink:#eeebff;--ink-muted:#aba6d0;--accent:#56c3ec;--on-accent:#0f0c21;--accent-2:#d57ee0;--on-accent-2:#0f0c21;--focus-ring:#a6e5f9;--domain-land:#f2b544;--domain-land-soft:#3a2c12;--domain-rail:#3ccdb4;--domain-rail-soft:#0f3530;--domain-water:#6d9bf5;--domain-water-soft:#1b2a55;--domain-air:#56cfee;--domain-air-soft:#123a4a;--domain-space:#b894f7;--domain-space-soft:#2e2156;--status-positive:#5fd394;--status-positive-soft:#133a28;--status-info:#79b0ff;--status-info-soft:#172b52;--status-neutral:#a9a5c6;--status-neutral-soft:#2a2745;--status-caution:#f2b544;--status-caution-soft:#3a2c12;--status-negative:#ff8a8a;--status-negative-soft:#44191d;--avail-wide:var(--status-positive);--avail-limited:var(--status-caution);--avail-none:var(--status-negative);--shadow-lift:0 8px 24px rgba(0, 0, 0, 0.45);--shadow-glow:0 0 0 1px rgba(86, 195, 236, 0.5), 0 0 24px rgba(71, 171, 216, 0.35);--shadow-tray:0 -8px 32px rgba(0, 0, 0, 0.5);--space-1:4px;--space-2:8px;--space-3:12px;--space-4:16px;--space-5:24px;--space-6:32px;--space-7:48px;--space-8:64px;--radius-sm:8px;--radius-card:14px;--radius-pill:999px;--font-display:"Orbitron", "Space Grotesk", system-ui, sans-serif;--font-sans:"Space Grotesk", system-ui, -apple-system, "Segoe UI", sans-serif;color-scheme:dark;}
+@media (prefers-color-scheme: light){:root:not([data-theme="dark"]){--brand-space:#0f0c21;--brand-haze:#21214b;--brand-cyan:#47abd8;--brand-glow:#a6e5f9;--brand-periwinkle:#5a74c4;--brand-magenta:#c560d1;--brand-violet:#4b3582;--surface-000:#f5f4fa;--surface-100:#ffffff;--surface-200:#ffffff;--surface-300:#ecebf6;--border:#d8d5ea;--border-strong:#817ca5;--ink:#15122d;--ink-muted:#57527c;--accent:#1b6a92;--on-accent:#ffffff;--accent-2:#93339f;--on-accent-2:#ffffff;--focus-ring:#4b3582;--domain-land:#8f5600;--domain-land-soft:#fbefd9;--domain-rail:#0b7566;--domain-rail-soft:#dcf3ef;--domain-water:#2352c2;--domain-water-soft:#e2eafc;--domain-air:#0b6a8a;--domain-air-soft:#dcf2f9;--domain-space:#6b3bc4;--domain-space-soft:#ece4fb;--status-positive:#17733f;--status-positive-soft:#dcf3e5;--status-info:#1f5bbf;--status-info-soft:#e0e9fb;--status-neutral:#5c5878;--status-neutral-soft:#ecebf2;--status-caution:#8f5600;--status-caution-soft:#fbefd9;--status-negative:#b3261e;--status-negative-soft:#fbe1df;--avail-wide:var(--status-positive);--avail-limited:var(--status-caution);--avail-none:var(--status-negative);--shadow-lift:0 8px 24px rgba(21, 18, 45, 0.12);--shadow-glow:0 0 0 1px rgba(27, 106, 146, 0.5), 0 4px 16px rgba(27, 106, 146, 0.15);--shadow-tray:0 -8px 32px rgba(21, 18, 45, 0.14);color-scheme:light;}}
+:root[data-theme="dark"]{--brand-space:#0f0c21;--brand-haze:#21214b;--brand-cyan:#47abd8;--brand-glow:#a6e5f9;--brand-periwinkle:#5a74c4;--brand-magenta:#c560d1;--brand-violet:#4b3582;--surface-000:#0f0c21;--surface-100:#161330;--surface-200:#1e1a3f;--surface-300:#2a2656;--border:#383366;--border-strong:#7a75b2;--ink:#eeebff;--ink-muted:#aba6d0;--accent:#56c3ec;--on-accent:#0f0c21;--accent-2:#d57ee0;--on-accent-2:#0f0c21;--focus-ring:#a6e5f9;--domain-land:#f2b544;--domain-land-soft:#3a2c12;--domain-rail:#3ccdb4;--domain-rail-soft:#0f3530;--domain-water:#6d9bf5;--domain-water-soft:#1b2a55;--domain-air:#56cfee;--domain-air-soft:#123a4a;--domain-space:#b894f7;--domain-space-soft:#2e2156;--status-positive:#5fd394;--status-positive-soft:#133a28;--status-info:#79b0ff;--status-info-soft:#172b52;--status-neutral:#a9a5c6;--status-neutral-soft:#2a2745;--status-caution:#f2b544;--status-caution-soft:#3a2c12;--status-negative:#ff8a8a;--status-negative-soft:#44191d;--avail-wide:var(--status-positive);--avail-limited:var(--status-caution);--avail-none:var(--status-negative);--shadow-lift:0 8px 24px rgba(0, 0, 0, 0.45);--shadow-glow:0 0 0 1px rgba(86, 195, 236, 0.5), 0 0 24px rgba(71, 171, 216, 0.35);--shadow-tray:0 -8px 32px rgba(0, 0, 0, 0.5);color-scheme:dark;}
+:root[data-theme="light"]{--brand-space:#0f0c21;--brand-haze:#21214b;--brand-cyan:#47abd8;--brand-glow:#a6e5f9;--brand-periwinkle:#5a74c4;--brand-magenta:#c560d1;--brand-violet:#4b3582;--surface-000:#f5f4fa;--surface-100:#ffffff;--surface-200:#ffffff;--surface-300:#ecebf6;--border:#d8d5ea;--border-strong:#817ca5;--ink:#15122d;--ink-muted:#57527c;--accent:#1b6a92;--on-accent:#ffffff;--accent-2:#93339f;--on-accent-2:#ffffff;--focus-ring:#4b3582;--domain-land:#8f5600;--domain-land-soft:#fbefd9;--domain-rail:#0b7566;--domain-rail-soft:#dcf3ef;--domain-water:#2352c2;--domain-water-soft:#e2eafc;--domain-air:#0b6a8a;--domain-air-soft:#dcf2f9;--domain-space:#6b3bc4;--domain-space-soft:#ece4fb;--status-positive:#17733f;--status-positive-soft:#dcf3e5;--status-info:#1f5bbf;--status-info-soft:#e0e9fb;--status-neutral:#5c5878;--status-neutral-soft:#ecebf2;--status-caution:#8f5600;--status-caution-soft:#fbefd9;--status-negative:#b3261e;--status-negative-soft:#fbe1df;--avail-wide:var(--status-positive);--avail-limited:var(--status-caution);--avail-none:var(--status-negative);--shadow-lift:0 8px 24px rgba(21, 18, 45, 0.12);--shadow-glow:0 0 0 1px rgba(27, 106, 146, 0.5), 0 4px 16px rgba(27, 106, 146, 0.15);--shadow-tray:0 -8px 32px rgba(21, 18, 45, 0.14);color-scheme:light;}
+
+/* Pujiverse Transport design system: components/bundle.css */
+
+body { margin: 0; font-family: var(--font-sans); font-size: 15px; line-height: 22px; background: var(--surface-000); color: var(--ink); }
+.pv-visually-hidden { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
+.pv-row { display: flex; flex-wrap: wrap; gap: var(--space-3); align-items: center; padding: var(--space-4); }
+.pv-stack { display: grid; gap: var(--space-4); padding: var(--space-4); }
+
+/* domain scope: sets --pv-d / --pv-d-soft for any child */
+.pv-d-land  { --pv-d: var(--domain-land);  --pv-d-soft: var(--domain-land-soft); }
+.pv-d-rail  { --pv-d: var(--domain-rail);  --pv-d-soft: var(--domain-rail-soft); }
+.pv-d-water { --pv-d: var(--domain-water); --pv-d-soft: var(--domain-water-soft); }
+.pv-d-air   { --pv-d: var(--domain-air);   --pv-d-soft: var(--domain-air-soft); }
+.pv-d-space { --pv-d: var(--domain-space); --pv-d-soft: var(--domain-space-soft); }
+
+/* tones */
+.pv-tone-positive { --pv-t: var(--status-positive); --pv-t-soft: var(--status-positive-soft); }
+.pv-tone-info     { --pv-t: var(--status-info);     --pv-t-soft: var(--status-info-soft); }
+.pv-tone-neutral  { --pv-t: var(--status-neutral);  --pv-t-soft: var(--status-neutral-soft); }
+.pv-tone-caution  { --pv-t: var(--status-caution);  --pv-t-soft: var(--status-caution-soft); }
+.pv-tone-negative { --pv-t: var(--status-negative); --pv-t-soft: var(--status-negative-soft); }
+
+:where(.pv-btn, .pv-chip, .pv-card--interactive, .pv-crumbs a, .pv-pill[tabindex]):focus-visible,
+.pv-search:focus-within { outline: 2px solid var(--focus-ring); outline-offset: 2px; }
+
+/* Button */
+.pv-btn { font: 600 13px/16px var(--font-sans); height: 40px; padding: 0 var(--space-4); border-radius: var(--radius-sm); border: 1px solid var(--border-strong); background: var(--surface-200); color: var(--ink); cursor: pointer; display: inline-flex; align-items: center; gap: var(--space-2); transition: background .15s, transform .15s; }
+.pv-btn:hover { background: var(--surface-300); }
+.pv-btn--primary { background: var(--accent); border-color: var(--accent); color: var(--on-accent); }
+.pv-btn--primary:hover { background: var(--accent); filter: brightness(1.08); }
+.pv-btn--ghost { background: transparent; border-color: transparent; color: var(--accent); }
+.pv-btn--ghost:hover { background: var(--surface-300); }
+.pv-btn--sm { height: 32px; padding: 0 var(--space-3); }
+.pv-btn:disabled { opacity: .45; cursor: not-allowed; }
+
+/* FilterChip */
+.pv-chip { font: 600 13px/16px var(--font-sans); height: 32px; padding: 0 var(--space-3); border-radius: var(--radius-pill); border: 1px solid var(--border-strong); background: transparent; color: var(--ink); cursor: pointer; display: inline-flex; align-items: center; gap: var(--space-2); }
+.pv-chip:hover { background: var(--surface-300); }
+.pv-chip__dot { width: 8px; height: 8px; border-radius: var(--radius-pill); background: var(--pv-d, var(--accent)); }
+.pv-chip__count { color: var(--ink-muted); font-weight: 400; font-variant-numeric: tabular-nums; }
+.pv-chip.is-selected { background: var(--pv-d-soft, var(--surface-300)); border-color: var(--pv-d, var(--accent)); color: var(--pv-d, var(--accent)); }
+.pv-chip.is-selected .pv-chip__count { color: inherit; }
+
+/* StatusPill / ConfidenceBadge */
+.pv-pill { display: inline-flex; align-items: center; gap: 6px; font: 600 12px/16px var(--font-sans); padding: 4px 10px; border-radius: var(--radius-pill); background: var(--pv-t-soft); color: var(--pv-t); white-space: nowrap; }
+.pv-pill__dot { width: 6px; height: 6px; border-radius: var(--radius-pill); background: currentColor; }
+.pv-pill--outline { background: transparent; border: 1px solid currentColor; cursor: help; }
+
+/* MonogramBadge */
+.pv-mono { display: inline-flex; flex-direction: column; align-items: center; gap: var(--space-2); }
+.pv-mono__disc { display: inline-grid; place-items: center; border-radius: var(--radius-pill); color: #ffffff; font-family: var(--font-display); font-weight: 700; letter-spacing: .04em; box-shadow: inset 0 0 0 2px rgba(255, 255, 255, .18); }
+.pv-mono__img { border-radius: var(--radius-pill); object-fit: contain; background: var(--surface-100); }
+.pv-mono__name { font: 600 13px/16px var(--font-sans); color: var(--ink); text-align: center; }
+
+/* Card */
+.pv-card { display: flex; flex-direction: column; gap: var(--space-2); text-align: left; font: inherit; color: var(--ink); text-decoration: none; background: var(--surface-200); border: 1px solid var(--border); border-radius: var(--radius-card); padding: var(--space-4); transition: transform .2s, box-shadow .2s, border-color .2s; }
+.pv-card--interactive { cursor: pointer; }
+.pv-card--interactive:hover { transform: translateY(-2px); box-shadow: var(--shadow-lift); border-color: var(--pv-d, var(--border-strong)); }
+.pv-card.is-selected { border-color: var(--pv-d, var(--accent)); box-shadow: var(--shadow-glow); }
+.pv-card__media { display: grid; place-items: center; aspect-ratio: 4 / 3; border-radius: calc(var(--radius-card) - 6px); background: var(--pv-d-soft, var(--surface-300)); color: var(--pv-d, var(--accent)); overflow: hidden; }
+.pv-card__head { display: flex; justify-content: space-between; align-items: baseline; gap: var(--space-2); }
+.pv-card__title { font: 600 17px/24px var(--font-sans); }
+.pv-card__badge { font: 600 12px/16px var(--font-sans); color: var(--pv-d, var(--ink-muted)); white-space: nowrap; }
+.pv-card__meta { font-size: 13px; line-height: 18px; color: var(--ink-muted); }
+@media (prefers-reduced-motion: reduce) { .pv-card, .pv-btn { transition: none; } .pv-card--interactive:hover { transform: none; } }
+
+/* AvailabilityGrid */
+.pv-avail__grid { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(auto-fill, minmax(128px, 1fr)); gap: 6px; }
+.pv-avail__cell { display: flex; flex-direction: column; gap: 2px; padding: var(--space-2) 10px; border-radius: var(--radius-sm); background: var(--surface-200); border: 1px solid var(--border); border-top: 3px solid var(--pv-a, var(--border-strong)); }
+.pv-avail--wide    { --pv-a: var(--avail-wide);    background: var(--status-positive-soft); }
+.pv-avail--limited { --pv-a: var(--avail-limited); background: var(--status-caution-soft); }
+.pv-avail--none    { --pv-a: var(--avail-none);    background: var(--status-negative-soft); }
+.pv-avail__region { font-size: 12px; line-height: 16px; color: var(--ink); }
+.pv-avail__state { font: 600 12px/16px var(--font-sans); color: var(--pv-a, var(--ink-muted)); }
+.pv-avail__note { margin: var(--space-2) 0 0; font-size: 13px; line-height: 18px; color: var(--ink-muted); }
+
+/* Timeline */
+.pv-tl { list-style: none; margin: 0; padding: 0 0 0 var(--space-5); position: relative; }
+.pv-tl::before { content: ""; position: absolute; left: 9px; top: 6px; bottom: 6px; width: 2px; background: var(--border); }
+.pv-tl__item { position: relative; display: flex; gap: var(--space-3); align-items: baseline; padding: 6px var(--space-2); border-radius: var(--radius-sm); }
+.pv-tl__item::before { content: ""; position: absolute; left: calc(-1 * var(--space-5) + 3px); top: 12px; width: 10px; height: 10px; border-radius: var(--radius-pill); background: var(--surface-100); border: 2px solid var(--border-strong); }
+.pv-tl__year { flex: none; min-width: 48px; font: 600 12px/16px var(--font-sans); padding: 2px 8px; border-radius: var(--radius-pill); background: var(--surface-300); color: var(--ink); text-align: center; font-variant-numeric: tabular-nums; }
+.pv-tl__event { font-size: 15px; line-height: 22px; }
+.pv-tl__item.is-highlight { background: var(--surface-300); }
+.pv-tl__item.is-highlight::before { background: var(--accent); border-color: var(--accent); box-shadow: var(--shadow-glow); }
+.pv-tl__item.is-highlight .pv-tl__year { background: var(--accent); color: var(--on-accent); }
+
+/* Breadcrumb */
+.pv-crumbs ol { list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; align-items: center; gap: var(--space-1); font: 500 13px/18px var(--font-sans); }
+.pv-crumbs li { display: inline-flex; align-items: center; gap: var(--space-1); }
+.pv-crumbs li + li::before { content: "›"; color: var(--ink-muted); padding: 0 2px; }
+.pv-crumbs a { color: var(--pv-d, var(--accent)); text-decoration: none; border-radius: 4px; }
+.pv-crumbs a:hover { text-decoration: underline; }
+.pv-crumbs [aria-current] { color: var(--ink); font-weight: 600; }
+
+/* SearchField */
+.pv-search { display: flex; align-items: center; gap: var(--space-2); height: 40px; padding: 0 var(--space-3); border-radius: var(--radius-sm); border: 1px solid var(--border-strong); background: var(--surface-200); color: var(--ink-muted); flex: 1 1 280px; max-width: 420px; }
+.pv-search__input { flex: 1; min-width: 0; border: 0; outline: 0; background: transparent; color: var(--ink); font: 400 15px/22px var(--font-sans); }
+.pv-search__input::placeholder { color: var(--ink-muted); }
+
+/* Vehicle Universe */
+html, body { height: 100%; }
+body { background: var(--surface-000); color: var(--ink); font-family: var(--font-sans); font-size: 15px; line-height: 22px; -webkit-font-smoothing: antialiased; }
+button { font: inherit; }
+#app { height: 100%; display: flex; flex-direction: column; }
+.sr { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
+
+/* ---------- header ---------- */
+.top { flex: none; display: grid; grid-template-columns: auto 1fr auto; grid-template-areas: "brand search tools"; align-items: center; gap: var(--space-3) var(--space-5); padding: var(--space-3) var(--space-5); background: var(--surface-100); border-bottom: 1px solid var(--border); position: relative; z-index: 20; }
+.brand { grid-area: brand; display: flex; align-items: center; gap: var(--space-3); color: inherit; text-decoration: none; border-radius: var(--radius-sm); }
+.brand:focus-visible { outline: 2px solid var(--focus-ring); outline-offset: 2px; }
+.logo-chip { display: block; background: var(--brand-space); border-radius: 10px; overflow: hidden; line-height: 0; }
+.logo-chip img { display: block; height: 56px; width: auto; }
+.logo-chip .mark { display: none; height: 36px; }
+.site-title { display: flex; flex-direction: column; }
+.site-title b { font-family: var(--font-display); font-weight: 700; font-size: 19px; line-height: 22px; letter-spacing: .08em; text-transform: uppercase; white-space: nowrap; }
+.site-title span { font-size: 12px; line-height: 16px; letter-spacing: .14em; text-transform: uppercase; color: var(--ink-muted); }
+.search-wrap { grid-area: search; position: relative; justify-self: center; width: 100%; max-width: 480px; }
+.search-wrap .pv-search { max-width: none; }
+.tools { grid-area: tools; display: flex; gap: var(--space-2); }
+.icon-btn { width: 40px; padding: 0; justify-content: center; }
+.navrow { flex: none; display: flex; align-items: center; gap: var(--space-3); min-width: 0; padding: var(--space-2) var(--space-5); background: var(--surface-100); border-bottom: 1px solid var(--border); }
+.navrow .pv-crumbs { min-width: 0; }
+
+.results { position: absolute; top: calc(100% + 6px); left: 0; right: 0; max-height: min(60vh, 460px); overflow: auto; background: var(--surface-200); border: 1px solid var(--border-strong); border-radius: var(--radius-card); box-shadow: var(--shadow-lift); padding: var(--space-2); z-index: 40; }
+.results h3 { margin: var(--space-2) var(--space-2) var(--space-1); font: 600 12px/16px var(--font-display); letter-spacing: .14em; text-transform: uppercase; color: var(--ink-muted); }
+.results button { display: flex; width: 100%; justify-content: space-between; gap: var(--space-3); text-align: left; padding: var(--space-2); border: 0; border-radius: var(--radius-sm); background: transparent; color: var(--ink); cursor: pointer; }
+.results button span:last-child { color: var(--ink-muted); font-size: 13px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.results button.is-active, .results button:hover { background: var(--surface-300); }
+.results .empty { padding: var(--space-3); color: var(--ink-muted); }
+
+/* ---------- split ---------- */
+.split { flex: 1; min-height: 0; display: grid; grid-template-columns: 58fr 42fr; }
+.stage, .nav { min-height: 0; overflow: auto; }
+.stage { padding: var(--space-5); background: var(--surface-000); }
+.nav { padding: var(--space-5); background: var(--surface-100); border-left: 1px solid var(--border); display: flex; flex-direction: column; gap: var(--space-6); }
+.fade { animation: fade .2s ease-out; }
+@keyframes fade { from { opacity: .35; transform: translateY(4px); } to { opacity: 1; transform: none; } }
+@media (prefers-reduced-motion: reduce) { .fade { animation: none; } }
+
+.eyebrow { font: 600 12px/16px var(--font-display); letter-spacing: .14em; text-transform: uppercase; color: var(--pv-d, var(--ink-muted)); margin: 0; }
+.h1 { font: 700 30px/36px var(--font-sans); letter-spacing: -.01em; margin: var(--space-1) 0 0; text-wrap: balance; }
+.h2 { font: 600 22px/28px var(--font-sans); margin: 0 0 var(--space-3); }
+.muted { color: var(--ink-muted); }
+.small { font-size: 13px; line-height: 18px; }
+.lede { margin: var(--space-2) 0 0; max-width: 62ch; }
+.section { display: flex; flex-direction: column; gap: var(--space-3); }
+.section > .h2 { margin: 0; }
+
+/* stage: domain groups */
+.dgroup + .dgroup { margin-top: var(--space-7); }
+.dhead { display: flex; align-items: baseline; justify-content: space-between; gap: var(--space-3); border-bottom: 1px solid var(--border); padding-bottom: var(--space-2); margin-bottom: var(--space-4); }
+.dhead h2 { margin: 0; font: 600 28px/32px var(--font-display); letter-spacing: .06em; text-transform: uppercase; color: var(--pv-d); }
+.grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(168px, 1fr)); gap: var(--space-4); }
+.grid--wide { grid-template-columns: repeat(auto-fill, minmax(210px, 1fr)); }
+.pv-card .pv-card__title { font-size: 15px; line-height: 20px; }
+.pv-card.is-twin { border-color: var(--accent-2); box-shadow: var(--shadow-glow); }
+.emoji-disc { width: 76px; height: 76px; border-radius: var(--radius-pill); display: grid; place-items: center; font-size: 38px; line-height: 1; background: var(--surface-100); box-shadow: 0 0 0 2px var(--pv-d); }
+.pv-card__media { aspect-ratio: 16 / 10; }
+.card-foot { display: flex; align-items: center; justify-content: space-between; gap: var(--space-2); flex-wrap: wrap; margin-top: auto; }
+.price-sm { font-weight: 600; font-variant-numeric: tabular-nums; }
+.swatch-well { width: 100%; height: 100%; display: grid; place-items: center; position: relative; }
+.swatch-well .body { width: 92px; height: 92px; border-radius: var(--radius-pill); display: grid; place-items: center; font-size: 42px; box-shadow: inset 0 0 0 3px rgba(255, 255, 255, .22); }
+
+/* navigator */
+.stats { display: flex; flex-wrap: wrap; gap: var(--space-1) var(--space-3); font-variant-numeric: tabular-nums; color: var(--ink-muted); }
+.stats b { color: var(--ink); font-weight: 600; }
+.controls { display: flex; flex-wrap: wrap; gap: var(--space-2); align-items: center; }
+.sort { display: flex; align-items: center; gap: var(--space-2); margin-left: auto; font-size: 13px; color: var(--ink-muted); }
+.sort select { font: 500 13px/16px var(--font-sans); height: 32px; padding: 0 var(--space-2); border-radius: var(--radius-sm); border: 1px solid var(--border-strong); background: var(--surface-200); color: var(--ink); }
+.sort select:focus-visible { outline: 2px solid var(--focus-ring); outline-offset: 2px; }
+.lgroup { border-top: 1px solid var(--border); }
+.lgroup summary { list-style: none; cursor: pointer; display: flex; justify-content: space-between; align-items: center; padding: var(--space-3) 0; border-radius: var(--radius-sm); }
+.lgroup summary::-webkit-details-marker { display: none; }
+.lgroup summary:focus-visible { outline: 2px solid var(--focus-ring); outline-offset: 2px; }
+.lgroup summary .eyebrow { font-size: 13px; }
+.chev { width: 16px; height: 16px; color: var(--ink-muted); transition: transform .15s; }
+.lgroup[open] .chev { transform: rotate(180deg); }
+.rows { list-style: none; margin: 0 0 var(--space-3); padding: 0; display: flex; flex-direction: column; gap: 2px; }
+.row { display: grid; grid-template-columns: 1fr auto; gap: 2px var(--space-3); width: 100%; text-align: left; padding: 10px var(--space-3); border: 1px solid transparent; border-radius: var(--radius-sm); background: transparent; color: var(--ink); cursor: pointer; }
+.row:hover, .row.is-twin { background: var(--surface-300); }
+.row.is-twin { border-color: var(--accent-2); }
+.row:focus-visible { outline: 2px solid var(--focus-ring); outline-offset: 2px; }
+.row .name { font-weight: 600; }
+.row .name::before { content: ""; display: inline-block; width: 8px; height: 8px; border-radius: 99px; background: var(--pv-d, var(--accent)); margin-right: var(--space-2); vertical-align: 1px; }
+.row .cat { grid-column: 1; font-size: 13px; line-height: 18px; color: var(--ink-muted); }
+.row .count { grid-row: 1 / span 2; grid-column: 2; align-self: center; font-size: 13px; color: var(--ink-muted); font-variant-numeric: tabular-nums; text-align: right; }
+
+.facts { display: grid; grid-template-columns: repeat(auto-fit, minmax(118px, 1fr)); gap: var(--space-3); margin: 0; }
+.facts div { background: var(--surface-200); border: 1px solid var(--border); border-radius: var(--radius-sm); padding: var(--space-3); }
+.facts dt { font-size: 12px; line-height: 16px; color: var(--ink-muted); }
+.facts dd { margin: 2px 0 0; font-weight: 600; font-variant-numeric: tabular-nums; }
+.kv { display: grid; grid-template-columns: minmax(110px, 34%) 1fr; margin: 0; }
+.kv dt, .kv dd { padding: var(--space-2) 0; border-top: 1px solid var(--border); margin: 0; }
+.kv dt { color: var(--ink-muted); font-size: 13px; padding-right: var(--space-3); }
+.null { color: var(--ink-muted); font-style: italic; }
+
+.prod { display: flex; flex-direction: column; gap: var(--space-2); padding: var(--space-3); border: 1px solid var(--border); border-radius: var(--radius-sm); }
+.prod.is-twin { border-color: var(--accent-2); background: var(--surface-300); }
+.prod-name { align-self: flex-start; display: inline-flex; gap: var(--space-2); align-items: center; padding: 0; border: 0; background: none; color: var(--accent); font: 600 17px/24px var(--font-sans); cursor: pointer; border-radius: 4px; text-align: left; }
+.prod-name:hover { text-decoration: underline; }
+.prod-name:focus-visible { outline: 2px solid var(--focus-ring); outline-offset: 2px; }
+.chips { display: flex; flex-wrap: wrap; gap: 6px; }
+.chips .pv-chip { height: 28px; padding: 0 10px; font-size: 12px; font-variant-numeric: tabular-nums; }
+
+/* price block */
+.prices { display: grid; grid-template-columns: repeat(auto-fit, minmax(190px, 1fr)); gap: var(--space-3); }
+.price { background: var(--surface-200); border: 1px solid var(--border); border-radius: var(--radius-card); padding: var(--space-4); display: flex; flex-direction: column; gap: var(--space-1); }
+.price .lbl { font: 600 12px/16px var(--font-display); letter-spacing: .12em; text-transform: uppercase; color: var(--ink-muted); }
+.price .val { font: 600 28px/32px var(--font-sans); font-variant-numeric: tabular-nums; overflow-wrap: anywhere; }
+.price .val.null { font-size: 18px; line-height: 24px; }
+.delta { grid-column: 1 / -1; display: flex; flex-wrap: wrap; align-items: baseline; gap: var(--space-2) var(--space-3); padding: var(--space-3) var(--space-4); border-radius: var(--radius-sm); background: var(--surface-300); }
+.delta b { font-variant-numeric: tabular-nums; }
+.ref { grid-column: 1 / -1; }
+.table-wrap { overflow-x: auto; }
+.pager { display: flex; justify-content: space-between; align-items: center; gap: var(--space-3); flex-wrap: wrap; }
+
+/* level 4 stage placeholder */
+.viewer { height: 100%; min-height: 360px; display: flex; flex-direction: column; gap: var(--space-3); }
+.viewer-box { flex: 1; min-height: 300px; border-radius: var(--radius-card); border: 1px dashed var(--border-strong); background: radial-gradient(ellipse at 50% 70%, var(--surface-200), var(--surface-100) 70%); display: grid; place-items: center; text-align: center; padding: var(--space-6); }
+.viewer-box .body { width: 150px; height: 150px; border-radius: var(--radius-pill); display: grid; place-items: center; font-size: 70px; margin: 0 auto var(--space-5); box-shadow: 0 0 0 3px var(--surface-000), 0 0 0 5px var(--pv-d), var(--shadow-glow); }
+.viewer-box .soon { font: 600 22px/28px var(--font-display); letter-spacing: .08em; text-transform: uppercase; margin: 0; }
+.viewer-box p { margin: var(--space-2) 0 0; }
+
+.foot { margin-top: auto; padding-top: var(--space-4); border-top: 1px solid var(--border); font-size: 12px; line-height: 17px; color: var(--ink-muted); }
+
+/* ---------- mobile ---------- */
+@media (max-width: 799px) {
+  html, body { height: auto; }
+  #app { height: auto; display: block; }
+  .top { position: static; grid-template-columns: 1fr auto; grid-template-areas: "brand tools" "search search"; padding: var(--space-3) var(--space-4); gap: var(--space-3); }
+  .navrow { position: sticky; top: env(safe-area-inset-top, 0px); z-index: 30; padding: var(--space-2) var(--space-4); background: var(--surface-100); border-bottom: 1px solid var(--border); }
+  .navrow .pv-crumbs { overflow-x: auto; scrollbar-width: none; }
+  .navrow .pv-crumbs ol { flex-wrap: nowrap; white-space: nowrap; }
+  .logo-chip .lockup { display: none; }
+  .logo-chip .mark { display: block; }
+  .site-title b { font-size: 16px; }
+  .split { display: block; }
+  .stage { height: 45vh; padding: var(--space-4); border-bottom: 1px solid var(--border); }
+  .nav { border-left: 0; padding: var(--space-4); overflow: visible; }
+  .viewer, .viewer-box { min-height: 0; }
+  .viewer-box .body { width: 96px; height: 96px; font-size: 46px; margin-bottom: var(--space-3); }
+  .dhead h2 { font-size: 22px; line-height: 26px; }
+  .grid { grid-template-columns: repeat(auto-fill, minmax(140px, 1fr)); gap: var(--space-3); }
+  .grid--wide { grid-template-columns: repeat(auto-fill, minmax(160px, 1fr)); }
+}
+
+/* ---------- photos, lists, websites (catalogue update) ---------- */
+.pv-card__media .photo { width: 100%; height: 100%; object-fit: cover; display: block; }
+.pv-card__media:has(.photo) { background: var(--surface-100); }
+.swatch-well { flex-direction: column; gap: var(--space-2); }
+.nophoto { font-size: 11px; line-height: 14px; color: var(--ink-muted); letter-spacing: .02em; }
+.listtools { display: flex; flex-wrap: wrap; align-items: center; gap: var(--space-2) var(--space-3); margin: 0 0 var(--space-4); }
+.nav .listtools { margin: 0; }
+.listtools .sort { margin-left: 0; }
+.mini-field { flex: 1 1 220px; display: flex; }
+.mini-field input { width: 100%; height: 32px; padding: 0 var(--space-3); border-radius: var(--radius-sm); border: 1px solid var(--border-strong); background: var(--surface-200); color: var(--ink); font: 400 13px/16px var(--font-sans); }
+.mini-field input::placeholder { color: var(--ink-muted); }
+.mini-field input:focus-visible { outline: 2px solid var(--focus-ring); outline-offset: 2px; }
+.more { display: flex; justify-content: center; margin-top: var(--space-5); }
+.extlink { color: var(--accent); text-decoration: none; overflow-wrap: anywhere; border-radius: 3px; }
+.extlink:hover { text-decoration: underline; }
+.extlink:focus-visible { outline: 2px solid var(--focus-ring); outline-offset: 2px; }
+.social { display: flex; flex-direction: column; gap: var(--space-2); }
+.soc { display: grid; grid-template-columns: minmax(84px, 22%) 1fr; gap: var(--space-3); font-size: 13px; line-height: 18px; }
+.soc-name { color: var(--ink-muted); }
+.soc-links { min-width: 0; overflow-wrap: anywhere; }
+.linkbtn { border: 0; background: none; color: var(--accent-2); font: 600 13px/18px var(--font-sans); cursor: pointer; padding: 0 2px; border-radius: 3px; }
+.linkbtn:focus-visible { outline: 2px solid var(--focus-ring); outline-offset: 2px; }
+.groupsites { border-top: 1px solid var(--border); padding-top: var(--space-2); }
+.groupsites summary { cursor: pointer; font-weight: 600; padding: var(--space-1) 0; border-radius: var(--radius-sm); }
+.groupsites summary:focus-visible { outline: 2px solid var(--focus-ring); outline-offset: 2px; }
+.groupsites ul { list-style: none; margin: var(--space-2) 0 0; padding: 0; display: flex; flex-direction: column; gap: 6px; font-size: 13px; line-height: 18px; max-height: 320px; overflow: auto; }
+.photo-frame { margin: 0; flex: 1; min-height: 300px; display: flex; flex-direction: column; border-radius: var(--radius-card); overflow: hidden; border: 1px solid var(--border); background: var(--surface-100); }
+.photo-frame img { flex: 1; min-height: 0; width: 100%; object-fit: contain; background: var(--brand-space); }
+.credit { padding: var(--space-2) var(--space-3); font-size: 12px; line-height: 16px; color: var(--ink-muted); border-top: 1px solid var(--border); overflow-wrap: anywhere; }
+.srcs { margin: 0; padding-left: 18px; display: flex; flex-direction: column; gap: 4px; font-size: 13px; line-height: 18px; }
+.boot { height: 100%; display: grid; place-items: center; text-align: center; padding: var(--space-6); color: var(--ink-muted); }
+.boot b { display: block; font: 700 22px/28px var(--font-display); letter-spacing: .08em; text-transform: uppercase; color: var(--ink); margin-bottom: var(--space-2); }
+@media (max-width: 799px) { .photo-frame { min-height: 0; height: 100%; } }
+.grouphead { grid-column: 1 / -1; display: flex; justify-content: space-between; align-items: baseline; gap: var(--space-3); margin: var(--space-4) 0 0; padding-bottom: var(--space-2); border-bottom: 1px solid var(--border); font: 600 18px/24px var(--font-display); letter-spacing: .06em; text-transform: uppercase; color: var(--pv-d, var(--ink)); }
+.grouphead:first-child { margin-top: 0; }
+.grouphead .extlink { font: 600 13px/18px var(--font-sans); letter-spacing: 0; text-transform: none; }
+.more { gap: var(--space-3); flex-wrap: wrap; }
+
+</style>
+<div id="app"></div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/react/18.3.1/umd/react.production.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/react-dom/18.3.1/umd/react-dom.production.min.js"></script>
+<script>
+/* @ds-bundle: {"format":4,"namespace":"Pujiverse","components":[{"name":"Button"},{"name":"FilterChip"},{"name":"StatusPill"},{"name":"ConfidenceBadge"},{"name":"MonogramBadge"},{"name":"Card"},{"name":"AvailabilityGrid"},{"name":"Timeline"},{"name":"Breadcrumb"},{"name":"SearchField"}]} */
+(function () {
+  var R = window.React, h = R.createElement;
+  function cx() { return Array.prototype.filter.call(arguments, Boolean).join(' '); }
+  function omit(o, keys) { var r = {}; for (var k in o) if (keys.indexOf(k) < 0) r[k] = o[k]; return r; }
+
+  var STATUS = {
+    'In production': 'positive', 'In service': 'info', 'In service (production ended)': 'info', 'Operational': 'info',
+    'In development': 'caution', 'Discontinued': 'neutral', 'Retired': 'neutral', 'Historical': 'neutral', 'Completed mission': 'neutral'
+  };
+  var AVAIL = { 'Widely available': 'wide', 'Limited / select countries': 'limited', 'Not available': 'none' };
+  var AVAIL_SHORT = { wide: 'Wide', limited: 'Limited', none: 'None' };
+  var CONF = { High: 'positive', Medium: 'caution', Low: 'negative' };
+
+  function Button(p) {
+    var v = p.variant || 'secondary', s = p.size || 'md';
+    return h('button', Object.assign({ type: 'button' }, omit(p, ['variant', 'size', 'className', 'children']), {
+      className: cx('pv-btn', 'pv-btn--' + v, s === 'sm' && 'pv-btn--sm', p.className)
+    }), p.children);
+  }
+
+  function FilterChip(p) {
+    return h('button', Object.assign({ type: 'button' }, omit(p, ['selected', 'domain', 'count', 'className', 'children']), {
+      className: cx('pv-chip', p.selected && 'is-selected', p.domain && 'pv-d-' + String(p.domain).toLowerCase(), p.className),
+      'aria-pressed': !!p.selected
+    }), p.domain && h('span', { className: 'pv-chip__dot', 'aria-hidden': true }), p.children,
+      p.count != null && h('span', { className: 'pv-chip__count' }, p.count));
+  }
+
+  function StatusPill(p) {
+    var tone = p.tone || STATUS[p.status] || 'neutral';
+    return h('span', { className: cx('pv-pill', 'pv-tone-' + tone, p.className) },
+      h('span', { className: 'pv-pill__dot', 'aria-hidden': true }), p.status);
+  }
+
+  function ConfidenceBadge(p) {
+    var lvl = p.level || 'Medium';
+    return h('span', {
+      className: cx('pv-pill', 'pv-pill--outline', 'pv-tone-' + (CONF[lvl] || 'neutral'), p.className),
+      title: 'Low = estimate; verify before relying on it.', tabIndex: 0
+    }, 'Data confidence: ' + lvl);
+  }
+
+  function lum(c) {
+    var r, g, b, m;
+    if ((m = /^#([0-9a-f]{6})$/i.exec(c || ''))) { var n = parseInt(m[1], 16); r = (n >> 16) / 255; g = (n >> 8 & 255) / 255; b = (n & 255) / 255; }
+    else if ((m = /hsl\(\s*([\d.]+)[, ]+([\d.]+)%[, ]+([\d.]+)%/i.exec(c || ''))) {
+      var H = +m[1] / 360, S = +m[2] / 100, L = +m[3] / 100, q = L < .5 ? L * (1 + S) : L + S - L * S, pp = 2 * L - q;
+      var f = function (t) { t = (t + 1) % 1; return t < 1 / 6 ? pp + (q - pp) * 6 * t : t < .5 ? q : t < 2 / 3 ? pp + (q - pp) * (2 / 3 - t) * 6 : pp; };
+      r = f(H + 1 / 3); g = f(H); b = f(H - 1 / 3);
+    } else return null;
+    var lin = function (x) { return x <= .03928 ? x / 12.92 : Math.pow((x + .055) / 1.055, 2.4); };
+    return .2126 * lin(r) + .7152 * lin(g) + .0722 * lin(b);
+  }
+  function inkOn(c) { var L = lum(c); if (L == null) return '#ffffff'; return (1.05 / (L + .05)) >= ((L + .05) / (0.0078 + .05)) ? '#ffffff' : '#0f0c21'; }
+
+  function MonogramBadge(p) {
+    var size = p.size || 64;
+    var disc = p.imageUrl
+      ? h('img', { className: 'pv-mono__img', src: p.imageUrl, alt: p.name + ' logo', width: size, height: size })
+      : h('span', { className: 'pv-mono__disc', role: 'img', 'aria-label': p.name + ' monogram',
+          style: { width: size, height: size, background: p.color, color: inkOn(p.color), fontSize: Math.round(size * 0.36) } }, p.monogram);
+    return h('span', { className: cx('pv-mono', p.className) }, disc,
+      p.showName !== false && h('span', { className: 'pv-mono__name' }, p.name));
+  }
+
+  function Card(p) {
+    var interactive = !!p.onClick || p.href;
+    var tag = p.href ? 'a' : (p.onClick ? 'button' : 'div');
+    return h(tag, Object.assign({}, omit(p, ['domain', 'selected', 'className', 'children', 'media', 'title', 'meta', 'badge']),
+      tag === 'button' ? { type: 'button' } : {}, {
+      className: cx('pv-card', interactive && 'pv-card--interactive', p.selected && 'is-selected', p.domain && 'pv-d-' + String(p.domain).toLowerCase(), p.className)
+    }),
+      p.media && h('div', { className: 'pv-card__media' }, p.media),
+      (p.title || p.badge) && h('div', { className: 'pv-card__head' },
+        p.title && h('span', { className: 'pv-card__title' }, p.title),
+        p.badge && h('span', { className: 'pv-card__badge' }, p.badge)),
+      p.meta && h('div', { className: 'pv-card__meta' }, p.meta),
+      p.children);
+  }
+
+  function AvailabilityGrid(p) {
+    var regions = p.regions || {};
+    var names = p.order || Object.keys(regions);
+    return h('div', { className: cx('pv-avail', p.className) },
+      h('ul', { className: 'pv-avail__grid', 'aria-label': 'Availability by region' },
+        names.map(function (r) {
+          var v = regions[r], k = AVAIL[v];
+          return h('li', { key: r, className: cx('pv-avail__cell', k ? 'pv-avail--' + k : 'pv-avail--unknown'), title: r + ': ' + (v || 'Not in dataset') },
+            h('span', { className: 'pv-avail__region' }, r),
+            h('span', { className: 'pv-avail__state' }, k ? AVAIL_SHORT[k] : 'Not in dataset'));
+        })),
+      p.note && h('p', { className: 'pv-avail__note' }, p.note));
+  }
+
+  function Timeline(p) {
+    var items = p.items || [];
+    return h('ol', { className: cx('pv-tl', p.className) }, items.map(function (it, i) {
+      var isStr = typeof it === 'string';
+      var hi = p.highlight != null && (p.highlight === i || (!isStr && p.highlight === it.year));
+      return h('li', { key: i, className: cx('pv-tl__item', hi && 'is-highlight'), 'aria-current': hi ? 'step' : undefined },
+        !isStr && h('span', { className: 'pv-tl__year' }, it.year),
+        h('span', { className: 'pv-tl__event' }, isStr ? it : it.event));
+    }));
+  }
+
+  function Breadcrumb(p) {
+    var items = p.items || [];
+    return h('nav', { className: cx('pv-crumbs', p.className), 'aria-label': 'Breadcrumb' },
+      h('ol', null, items.map(function (it, i) {
+        var last = i === items.length - 1;
+        return h('li', { key: i, className: it.domain ? 'pv-d-' + String(it.domain).toLowerCase() : undefined },
+          last ? h('span', { 'aria-current': 'page' }, it.label)
+               : h('a', { href: it.href || '#', onClick: it.onClick }, it.label));
+      })));
+  }
+
+  function SearchField(p) {
+    return h('label', { className: cx('pv-search', p.className) },
+      h('svg', { className: 'pv-search__icon', viewBox: '0 0 20 20', width: 18, height: 18, 'aria-hidden': true },
+        h('circle', { cx: 8.5, cy: 8.5, r: 5.5, fill: 'none', stroke: 'currentColor', strokeWidth: 2 }),
+        h('path', { d: 'M13 13l4.5 4.5', stroke: 'currentColor', strokeWidth: 2, strokeLinecap: 'round' })),
+      h('span', { className: 'pv-visually-hidden' }, p.label || 'Search'),
+      h('input', Object.assign({ type: 'search', placeholder: 'Search types, brands, products' }, omit(p, ['label', 'className']), { className: 'pv-search__input' })));
+  }
+
+  window.Pujiverse = Object.assign(window.Pujiverse || {}, {
+    Button: Button, FilterChip: FilterChip, StatusPill: StatusPill, ConfidenceBadge: ConfidenceBadge,
+    MonogramBadge: MonogramBadge, Card: Card, AvailabilityGrid: AvailabilityGrid, Timeline: Timeline,
+    Breadcrumb: Breadcrumb, SearchField: SearchField, inkOn: inkOn, statusTone: function (s) { return STATUS[s] || 'neutral'; }
+  });
+})();
+
+</script>
+<script>
+window.VU_LOCKUP = "data:image/jpeg;base64,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";
+window.VU_MARK = "data:image/jpeg;base64,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";
+</script>
+<script>
+function VU_BOOT(D, TILES) {
+  var R = React, h = R.createElement, P = window.Pujiverse;
+  var useState = R.useState, useEffect = R.useEffect, useMemo = R.useMemo, useRef = R.useRef;
+  var DOMAINS = D.meta.domains; // Land, Rail, Water, Air, Space
+  var REGIONS = D.meta.regions;
+
+  // ---------- indexes ----------
+  var T = {}, B = {}, PR = {};
+  D.vehicle_types.forEach(function (t) { T[t.id] = t; });
+  D.brands.forEach(function (b) { B[b.id] = b; });
+  // products load per vehicle type (data/p/<type>.json)
+  var PRODUCTS = {}, TYPE_LOAD = {}, typeListeners = [];
+  function loadType(id) {
+    if (!id || PRODUCTS[id] || TYPE_LOAD[id]) return TYPE_LOAD[id];
+    TYPE_LOAD[id] = fetch('data/p/' + id + '.json').then(function (r) { if (!r.ok) throw new Error(r.status); return r.json(); })
+      .then(function (ps) { PRODUCTS[id] = ps; ps.forEach(function (p) { PR[p.id] = p; }); typeListeners.forEach(function (f) { f(); }); })
+      .catch(function () { delete TYPE_LOAD[id]; typeListeners.forEach(function (f) { f(); }); });
+    return TYPE_LOAD[id];
+  }
+  var BYTB = {};
+  function productsOf(typeId, brandId) {
+    var ps = PRODUCTS[typeId] || []; if (!brandId) return ps;
+    var k = typeId + '/' + brandId;
+    if (!BYTB[k] || BYTB[k].src !== ps) BYTB[k] = { src: ps, list: ps.filter(function (p) { return p.brand_id === brandId; }) };
+    return BYTB[k].list;
+  }
+  function brandCount(typeId, brandId) { var s = T[typeId].stats; return (s && s.brand_counts && s.brand_counts[brandId]) || 0; }
+  var typeStats = {}, BRAND_TOTAL = {};
+  D.vehicle_types.forEach(function (t) { typeStats[t.id] = t.stats; var bc = (t.stats && t.stats.brand_counts) || {}; Object.keys(bc).forEach(function (k) { BRAND_TOTAL[k] = (BRAND_TOTAL[k] || 0) + bc[k]; }); });
+  function brandTypes(id) { return D.vehicle_types.filter(function (t) { return brandCount(t.id, id) > 0; }).map(function (t) { return t.id; }); }
+
+  // ---------- formatting ----------
+  var nf = new Intl.NumberFormat('en-US', { style: 'currency', currency: 'USD', maximumFractionDigits: 0 });
+  function usd(v) { return v == null ? null : nf.format(v); }
+  function usdShort(v) {
+    if (v == null) return null;
+    var a = Math.abs(v);
+    function t(n, s) { var x = (v / n); return '$' + (Math.abs(x) >= 100 ? Math.round(x) : +x.toFixed(1)) + s; }
+    if (a >= 1e9) return t(1e9, 'B'); if (a >= 1e6) return t(1e6, 'M'); return usd(v);
+  }
+  function range(min, max, short) { var f = short ? usdShort : usd; if (min == null) return null; return min === max ? f(min) : f(min) + ' – ' + f(max); }
+  function country(hq) { return (hq || '').replace(/\s*\(.*\)\s*$/, '') || 'Not in dataset'; }
+  function dcls(domain) { return 'pv-d-' + String(domain).toLowerCase(); }
+  function plural(n, w) { return n + ' ' + w + (n === 1 ? '' : 's'); }
+  function nul(text) { return h('span', { className: 'null' }, text); }
+
+  // ---------- routing ----------
+  function parse(hash) {
+    var s = (hash || '').replace(/^#\/?/, '').split('/').filter(Boolean), r = { level: 1 };
+    if (s[0] === 'brand' && B[s[1]]) return { level: 5, brand: s[1] };
+    if (s[0] === 'type' && T[s[1]]) { r.level = 2; r.type = s[1];
+      if (s[2] === 'brand' && B[s[3]] && T[s[1]].brand_ids.indexOf(s[3]) >= 0) { r.level = 3; r.brand = s[3];
+        if (s[4] === 'product' && s[5] && (!PRODUCTS[s[1]] || (PR[s[5]] && PR[s[5]].brand_id === s[3] && PR[s[5]].type_id === s[1]))) { r.level = 4; r.product = s[5];
+          if (s[6] === 'year' && s[7]) r.year = decodeURIComponent(s[7]); } } }
+    return r;
+  }
+  function href(type, brand, product, year) {
+    var s = '#/';
+    if (type) s += 'type/' + type;
+    if (brand) s += '/brand/' + brand;
+    if (product) s += '/product/' + product;
+    if (year) s += '/year/' + encodeURIComponent(year);
+    return s;
+  }
+  function go(to) { if (location.hash !== to) location.hash = to; }
+  function productHref(p, year) { return href(p.type_id, p.brand_id, p.id, year); }
+  function brandHref(id) { return '#/brand/' + id; }
+
+  // ---------- search ----------
+  var INDEX = [].concat(
+    D.vehicle_types.map(function (t) { return { kind: 'Types', label: t.name, sub: t.domain + ' · ' + t.category, to: href(t.id), key: t.name.toLowerCase() }; }),
+    D.brands.map(function (b) { var n = BRAND_TOTAL[b.id] || 0, nt = brandTypes(b.id).length; return { kind: 'Brands', label: b.name, sub: 'All ' + n.toLocaleString('en-US') + ' model' + (n === 1 ? '' : 's') + (nt > 1 ? ' in ' + nt + ' types' : ''), to: brandHref(b.id), key: b.name.toLowerCase() }; }),
+    []
+  );
+  var SEARCH_LOADED = false, SEARCH_READY = false, searchListeners = [];
+  function loadSearch() {
+    if (SEARCH_LOADED) return; SEARCH_LOADED = true;
+    fetch('data/search.json').then(function (r) { return r.json(); }).then(function (rows) {
+      SEARCH_READY = true; setTimeout(function () { searchListeners.forEach(function (f) { f(); }); }, 0);
+      rows.forEach(function (x) { var b = B[x[2]], t = T[x[3]]; INDEX.push({ kind: 'Products', label: x[1], sub: (b ? b.name : '') + ' · ' + (t ? t.name : ''), to: href(x[3], x[2], x[0]), key: (x[1] + ' ' + (b ? b.name : '')).toLowerCase() }); });
+    }).catch(function () { SEARCH_LOADED = false; });
+  }
+  function score(key, q) {
+    var i = key.indexOf(q);
+    if (i === 0) return 100 - key.length / 100;
+    if (i > 0) return (/[\s\/(-]/.test(key[i - 1]) ? 80 : 60) - key.length / 100;
+    var k = 0, gaps = 0, last = -1;
+    for (var j = 0; j < key.length && k < q.length; j++) if (key[j] === q[k]) { if (last >= 0) gaps += j - last - 1; last = j; k++; }
+    return k === q.length && gaps <= q.length * 2 ? 30 - gaps : -1;
+  }
+  function search(q) {
+    q = q.trim().toLowerCase(); if (!q) return [];
+    var out = { Types: [], Brands: [], Products: [] };
+    INDEX.forEach(function (it) { var s = score(it.key, q); if (s >= 0) out[it.kind].push({ it: it, s: s }); });
+    return ['Types', 'Brands', 'Products'].map(function (k) {
+      var strong = out[k].some(function (x) { return x.s >= 60; });
+      if (strong) out[k] = out[k].filter(function (x) { return x.s >= 60; });
+      return { kind: k, items: out[k].sort(function (a, b) { return b.s - a.s; }).slice(0, k === 'Products' ? 8 : k === 'Brands' ? 8 : 5).map(function (x) { return x.it; }) };
+    }).filter(function (g) { return g.items.length; });
+  }
+
+  // ---------- images (Wikimedia Commons, packed in chunk files) ----------
+  var IMG = {}, CHUNKS = {}, imgListeners = [];
+  function loadChunk(name) {
+    if (!name || CHUNKS[name]) return CHUNKS[name];
+    CHUNKS[name] = fetch('img/' + name + '.json').then(function (r) { if (!r.ok) throw new Error(r.status); return r.json(); })
+      .then(function (m) { Object.assign(IMG, m); imgListeners.forEach(function (f) { f(); }); })
+      .catch(function () { delete CHUNKS[name]; });
+    return CHUNKS[name];
+  }
+  function useChunks(names) {
+    var st = useState(0), bump = st[1];
+    useEffect(function () {
+      var f = function () { bump(function (x) { return x + 1; }); };
+      imgListeners.push(f); names.forEach(loadChunk);
+      return function () { imgListeners = imgListeners.filter(function (g) { return g !== f; }); };
+    }, [names.join(',')]);
+  }
+  function chunksFor(ps) { var s = {}; ps.forEach(function (p) { if (p.img_chunk) s[p.img_chunk] = 1; }); return Object.keys(s); }
+  function yearOf(p) { return p.first_launched || null; }
+  function sortProducts(ps, how) {
+    var a = ps.slice();
+    function y(p) { var m = /\d{4}/.exec(p.first_launched || ''); return m ? +m[0] : 99999; }
+    if (how === 'name') a.sort(function (x, z) { return x.name.localeCompare(z.name); });
+    else if (how === 'newest') a.sort(function (x, z) { return (y(z) === 99999 ? -1 : y(z)) - (y(x) === 99999 ? -1 : y(x)) || x.name.localeCompare(z.name); });
+    else if (how === 'oldest') a.sort(function (x, z) { return y(x) - y(z) || x.name.localeCompare(z.name); });
+    else if (how === 'photo') a.sort(function (x, z) { return (z.img_chunk ? 1 : 0) - (x.img_chunk ? 1 : 0); });
+    return a;
+  }
+  function filterProducts(ps, q) {
+    q = (q || '').trim().toLowerCase(); if (!q) return ps;
+    return ps.filter(function (p) { return (p.name + ' ' + (p.first_launched || '')).toLowerCase().indexOf(q) >= 0; });
+  }
+
+  // ---------- small views ----------
+  function Icon(name) {
+    var p = { sun: 'M12 4V2M12 22v-2M4 12H2M22 12h-2M5.6 5.6 4.2 4.2M19.8 19.8l-1.4-1.4M5.6 18.4l-1.4 1.4M19.8 4.2l-1.4 1.4',
+      moon: 'M20 14.5A8 8 0 0 1 9.5 4a8 8 0 1 0 10.5 10.5Z', back: 'M15 18l-6-6 6-6', chev: 'M6 9l6 6 6-6', next: 'M9 18l6-6-6-6' }[name];
+    return h('svg', { viewBox: '0 0 24 24', width: 18, height: 18, fill: 'none', stroke: 'currentColor', strokeWidth: 2, strokeLinecap: 'round', strokeLinejoin: 'round', 'aria-hidden': true, className: name === 'chev' ? 'chev' : undefined },
+      name === 'sun' && h('circle', { cx: 12, cy: 12, r: 4 }), h('path', { d: p }));
+  }
+  function Emoji(t) { return h('span', { className: 'emoji-disc', 'aria-hidden': true }, t.icon_emoji); }
+  function TypeMedia(t) { var tl = TILES[t.id]; return t.image_url ? h('img', { className: 'photo', src: t.image_url, alt: '' }) : tl ? h('img', { className: 'photo', src: tl.src, alt: '', loading: 'lazy' }) : Emoji(t); }
+  function ProductMedia(p) {
+    var t = T[p.type_id];
+    if (IMG[p.id]) return h('img', { className: 'photo', src: IMG[p.id], alt: p.name, loading: 'lazy' });
+    return h('div', { className: 'swatch-well' }, h('span', { className: 'body', style: { background: p.model_3d.body_color || 'var(--surface-100)' }, 'aria-hidden': true }, t.icon_emoji),
+      h('span', { className: 'nophoto' }, p.img_chunk ? 'Loading photo' : p.image ? 'Photo being added' : 'No free photo yet'));
+  }
+  function twinProps(key, hover, setHover) {
+    return { onMouseEnter: function () { setHover(key); }, onMouseLeave: function () { setHover(null); }, onFocus: function () { setHover(key); }, onBlur: function () { setHover(null); } };
+  }
+
+  // ---------- Level 1 ----------
+  function visibleTypes(filter, sort) {
+    var list = D.vehicle_types.filter(function (t) { return filter === 'All' || t.domain === filter; });
+    var s = list.slice();
+    if (sort === 'name') s.sort(function (a, b) { return a.name.localeCompare(b.name); });
+    else if (sort === 'brands') s.sort(function (a, b) { return typeStats[b.id].brands - typeStats[a.id].brands || a.name.localeCompare(b.name); });
+    else if (sort === 'price') s.sort(function (a, b) { return (typeStats[b.id].max || 0) - (typeStats[a.id].max || 0); });
+    var groups = DOMAINS.filter(function (d) { return filter === 'All' || d === filter; }).map(function (d) { return { domain: d, items: s.filter(function (t) { return t.domain === d; }) }; });
+    return groups;
+  }
+  function HomeStage(props) {
+    return h('div', null, props.groups.map(function (g) {
+      return h('section', { key: g.domain, className: 'dgroup ' + dcls(g.domain), 'aria-label': g.domain },
+        h('div', { className: 'dhead' }, h('h2', null, g.domain), h('span', { className: 'muted small' }, plural(g.items.length, 'type'))),
+        h('div', { className: 'grid' }, g.items.map(function (t) {
+          var k = 't:' + t.id;
+          return h(P.Card, Object.assign({ key: t.id, domain: t.domain, href: href(t.id), media: TypeMedia(t), title: t.name, meta: t.category,
+            className: props.hover === k ? 'is-twin' : '', 'aria-label': t.name + ', ' + plural(typeStats[t.id].brands, 'brand') },
+            twinProps(k, props.hover, props.setHover)), h('div', { className: 'card-foot' }, h('span', { className: 'pv-card__badge' }, plural(typeStats[t.id].brands, 'brand'))));
+        })));
+    }));
+  }
+  function HomeNav(props) {
+    var total = D.vehicle_types.length;
+    return h(R.Fragment, null,
+      h('div', null,
+        h('p', { className: 'eyebrow' }, 'Explore'),
+        h('h1', { className: 'h1' }, 'Every kind of vehicle'),
+        h('p', { className: 'stats small', style: { margin: '8px 0 0' } },
+          h('span', null, h('b', null, total), ' types'), '·', h('span', null, h('b', null, D.brands.length.toLocaleString('en-US')), ' brands'), '·', h('span', null, h('b', null, D.meta.counts.products.toLocaleString('en-US')), ' models'))),
+      h('div', { className: 'section' },
+        h('div', { className: 'controls', role: 'group', 'aria-label': 'Filter by domain' },
+          ['All'].concat(DOMAINS).map(function (d) {
+            var n = d === 'All' ? total : D.vehicle_types.filter(function (t) { return t.domain === d; }).length;
+            return h(P.FilterChip, { key: d, domain: d === 'All' ? undefined : d, selected: props.filter === d, count: n, onClick: function () { props.setFilter(d); } }, d);
+          })),
+        h('label', { className: 'sort', htmlFor: 'sort' }, 'Sort by',
+          h('select', { id: 'sort', value: props.sort, onChange: function (e) { props.setSort(e.target.value); } },
+            h('option', { value: 'data' }, 'Dataset order'), h('option', { value: 'name' }, 'Name'), h('option', { value: 'brands' }, '# Brands'), h('option', { value: 'price' }, 'Price range (highest first)')))),
+      h('div', null, props.groups.map(function (g) {
+        return h('details', { key: g.domain, className: 'lgroup ' + dcls(g.domain), open: true },
+          h('summary', null, h('span', { className: 'eyebrow' }, g.domain + ' · ' + plural(g.items.length, 'type')), Icon('chev')),
+          h('ul', { className: 'rows' }, g.items.map(function (t) {
+            var k = 't:' + t.id, st = typeStats[t.id];
+            return h('li', { key: t.id }, h('button', Object.assign({ className: 'row' + (props.hover === k ? ' is-twin' : ''), onClick: function () { go(href(t.id)); } }, twinProps(k, props.hover, props.setHover)),
+              h('span', { className: 'name' }, t.name), h('span', { className: 'cat' }, t.category),
+              h('span', { className: 'count' }, plural(st.brands, 'brand'), h('br'), plural(st.products, 'product'))));
+          })));
+      })));
+  }
+
+  // ---------- Level 2 ----------
+  function brandList(props) {
+    var t = T[props.r.type], l2 = props.l2, q = (l2.q || '').trim().toLowerCase();
+    var ids = t.brand_ids.filter(function (id) { return !q || B[id].name.toLowerCase().indexOf(q) >= 0 || String(B[id].headquarters || '').toLowerCase().indexOf(q) >= 0; });
+    if (l2.sort === 'models') ids = ids.slice().sort(function (a, b) { return brandCount(t.id, b) - brandCount(t.id, a); });
+    else if (l2.sort === 'name') ids = ids.slice().sort(function (a, b) { return B[a].name.localeCompare(B[b].name); });
+    return { all: t.brand_ids, filtered: ids, shown: ids.slice(0, l2.limit) };
+  }
+  function BrandTools(props) {
+    var l2 = props.l2, set = props.setL2, L = brandList(props);
+    if (L.all.length <= 12) return null;
+    return h('div', { className: 'listtools' },
+      h('label', { className: 'mini-field', htmlFor: props.idp + 'bf' }, h('span', { className: 'sr' }, 'Filter brands'),
+        h('input', { id: props.idp + 'bf', type: 'search', placeholder: 'Filter ' + L.all.length.toLocaleString('en-US') + ' brands by name or country', value: l2.q, onChange: function (e) { set({ q: e.target.value, sort: l2.sort, limit: 60 }); } })),
+      h('label', { className: 'sort', htmlFor: props.idp + 'bs' }, 'Sort',
+        h('select', { id: props.idp + 'bs', value: l2.sort, onChange: function (e) { set({ q: l2.q, sort: e.target.value, limit: 60 }); } },
+          h('option', { value: 'data' }, 'Featured first'), h('option', { value: 'models' }, 'Most models'), h('option', { value: 'name' }, 'Name A–Z'))),
+      h('span', { className: 'muted small' }, 'Showing ' + L.shown.length + ' of ' + L.filtered.length.toLocaleString('en-US')));
+  }
+  function BrandMore(props) {
+    var L = brandList(props), l2 = props.l2;
+    if (L.shown.length >= L.filtered.length) return null;
+    return h('div', { className: 'more' }, h(P.Button, { onClick: function () { props.setL2({ q: l2.q, sort: l2.sort, limit: l2.limit + 120 }); } }, 'Show ' + Math.min(120, L.filtered.length - L.shown.length) + ' more brands'));
+  }
+  function TypeStage(props) {
+    var t = T[props.r.type], L = brandList(props);
+    return h('div', { className: dcls(t.domain) },
+      h('div', { className: 'dhead' }, h('h2', null, t.name), h('span', { className: 'muted small' }, plural(t.brand_ids.length, 'brand'))),
+      h(BrandTools, Object.assign({ idp: 's' }, props)),
+      h('div', { className: 'grid grid--wide' }, L.shown.map(function (id) {
+        var b = B[id], k = 'b:' + id, n = brandCount(t.id, id);
+        return h(P.Card, Object.assign({ key: id, domain: t.domain, href: href(t.id, id), className: props.hover === k ? 'is-twin' : '',
+          media: h(P.MonogramBadge, { name: b.name, monogram: b.logo.monogram, color: b.logo.monogram_color, imageUrl: b.logo.image_url, size: 72, showName: false }),
+          title: b.name, meta: (b.founded_year ? 'Founded ' + b.founded_year + ' · ' : '') + country(b.headquarters) },
+          twinProps(k, props.hover, props.setHover)), h('div', { className: 'card-foot' }, h('span', { className: 'pv-card__badge' }, plural(n, 'model') + ' in this type')));
+      })),
+      h(BrandMore, props));
+  }
+  function TypeNav(props) {
+    var t = T[props.r.type], st = typeStats[t.id], off = st.products - st.onSale;
+    return h(R.Fragment, null,
+      h('div', { className: dcls(t.domain) },
+        h('p', { className: 'eyebrow' }, t.domain + ' · ' + t.category),
+        h('h1', { className: 'h1' }, t.name),
+        h('p', { className: 'lede' }, t.description)),
+      h('dl', { className: 'facts' },
+        h('div', null, h('dt', null, 'Propulsion'), h('dd', null, t.propulsion || nul('Not in dataset'))),
+        h('div', null, h('dt', null, 'Primary application'), h('dd', null, t.primary_application || nul('Not in dataset'))),
+        h('div', null, h('dt', null, 'Price range (reference)'), h('dd', null, range(st.min, st.max, true) || nul('Not published'))),
+        h('div', null, h('dt', null, 'Models in dataset'), h('dd', null, st.products.toLocaleString('en-US'), h('span', { className: 'muted small' }, ' · ' + st.photos.toLocaleString('en-US') + ' with photos; ' + st.onSale + ' confirmed on sale today')))),
+      h('div', { className: 'section' },
+        h('h2', { className: 'h2' }, 'Brands'),
+        h(BrandTools, Object.assign({ idp: 'n' }, props)),
+        h('ul', { className: 'rows ' + dcls(t.domain) }, brandList(props).shown.map(function (id) {
+          var b = B[id], k = 'b:' + id;
+          return h('li', { key: id }, h('button', Object.assign({ className: 'row' + (props.hover === k ? ' is-twin' : ''), onClick: function () { go(href(t.id, id)); } }, twinProps(k, props.hover, props.setHover)),
+            h('span', { className: 'name' }, b.name), h('span', { className: 'cat' }, country(b.headquarters) + (b.founded_year ? ' · since ' + b.founded_year : '')),
+            h('span', { className: 'count' }, plural(brandCount(t.id, id), 'model'))));
+        })),
+        h(BrandMore, props)));
+  }
+
+  // ---------- websites ----------
+  var SOCIAL = { x: 'X', instagram: 'Instagram', facebook: 'Facebook', youtube: 'YouTube', youtube_handle: 'YouTube', linkedin: 'LinkedIn', tiktok: 'TikTok', weibo: 'Weibo', flickr: 'Flickr', telegram: 'Telegram', blog: 'Blog', mastodon: 'Mastodon' };
+  function host(u) { try { return new URL(u).host.replace(/^www\./, ''); } catch (e) { return u; } }
+  function ext(u, label) { return h('a', { className: 'extlink', href: u, target: '_blank', rel: 'noopener noreferrer' }, label || host(u)); }
+  function Websites(props) {
+    var w = props.b.websites || {}, soc = w.social || {};
+    var os = useState(false), open = os[0], setOpen = os[1];
+    var rows = [];
+    (w.official || []).forEach(function (s, i) { rows.push(['Official website' + ((w.official.length > 1 && s.lang) ? ' (' + s.lang + ')' : ''), ext(s.url), s.note]); });
+    if (!rows.length) rows.push(['Official website', nul('Not in dataset')]);
+    rows.push(['Newsroom', w.newsroom ? ext(w.newsroom) : nul('Not found')]);
+    rows.push(['Investor relations', w.investors ? ext(w.investors) : nul('Not found')]);
+    rows.push(['Careers', w.careers ? ext(w.careers) : nul('Not found')]);
+    if (w.wikipedia) rows.push(['Wikipedia', ext(w.wikipedia, 'Wikipedia article')]);
+    var socKeys = Object.keys(SOCIAL).filter(function (k) { return soc[k] && soc[k].length; });
+    var groups = w.group_sites || [];
+    return h('div', { className: 'section' },
+      h('h2', { className: 'h2' }, 'Websites and channels'),
+      h('dl', { className: 'kv' }, rows.map(function (r, i) { return h(R.Fragment, { key: i }, h('dt', null, r[0]), h('dd', null, r[1], r[2] && h('span', { className: 'muted small' }, ' · ' + r[2]))); })),
+      socKeys.length ? h('div', { className: 'social' }, socKeys.map(function (k) {
+        var list = soc[k], first = list[0];
+        return h('div', { key: k, className: 'soc' }, h('span', { className: 'soc-name' }, SOCIAL[k]),
+          h('span', { className: 'soc-links' }, (open ? list : list.slice(0, 3)).map(function (u, i) { return h(R.Fragment, { key: i }, i ? ' · ' : '', ext(u, u.replace(/^https?:\/\/(www\.)?[^/]+\/(channel\/|company\/|@)?/, '').replace(/\/$/, '') || host(u))); }),
+            !open && list.length > 3 && h('button', { className: 'linkbtn', onClick: function () { setOpen(true); } }, ' +' + (list.length - 3) + ' regional accounts')));
+      })) : h('p', { className: 'muted small', style: { margin: 0 } }, 'No official social channels in dataset.'),
+      groups.length ? h('details', { className: 'groupsites' }, h('summary', null, 'Group companies and regional sites (' + (w.group_sites_total || groups.length) + ')'),
+        h('ul', null, groups.map(function (g, i) { return h('li', { key: i }, h('span', null, g.name), g.country && h('span', { className: 'muted small' }, ' · ' + g.country), ' ', ext(g.url)); })),
+        (w.group_sites_total || 0) > groups.length && h('p', { className: 'muted small' }, 'Showing the first ' + groups.length + '.')) : null,
+      h('p', { className: 'muted small', style: { margin: 0 } }, 'From Wikidata; newsroom, investor and careers pages found by checking the official site. Links open in a new tab.'));
+  }
+
+  // ---------- Level 3 ----------
+  function listFor(props) {
+    var all = productsOf(props.r.type, props.r.brand), l3 = props.l3;
+    var f = sortProducts(filterProducts(all, l3.q), l3.sort);
+    return { all: all, filtered: f, shown: f.slice(0, l3.limit) };
+  }
+  function ListTools(props) {
+    var l3 = props.l3, set = props.setL3, L = listFor(props);
+    return h('div', { className: 'listtools' },
+      h('label', { className: 'mini-field', htmlFor: 'pf' }, h('span', { className: 'sr' }, 'Filter models'),
+        h('input', { id: 'pf', type: 'search', placeholder: 'Filter ' + L.all.length.toLocaleString('en-US') + ' models by name or year', value: l3.q, onChange: function (e) { set({ q: e.target.value, sort: l3.sort, limit: 48 }); } })),
+      h('label', { className: 'sort', htmlFor: 'ps' }, 'Sort',
+        h('select', { id: 'ps', value: l3.sort, onChange: function (e) { set({ q: l3.q, sort: e.target.value, limit: 48 }); } },
+          h('option', { value: 'data' }, 'Featured first'), h('option', { value: 'oldest' }, 'Oldest first'), h('option', { value: 'newest' }, 'Newest first'), h('option', { value: 'name' }, 'Name A–Z'), h('option', { value: 'photo' }, 'With photo first'))),
+      h('span', { className: 'muted small' }, 'Showing ' + L.shown.length + ' of ' + L.filtered.length.toLocaleString('en-US')));
+  }
+  function MoreButton(props) {
+    var L = listFor(props), l3 = props.l3;
+    if (L.shown.length >= L.filtered.length) return null;
+    return h('div', { className: 'more' }, h(P.Button, { onClick: function () { props.setL3({ q: l3.q, sort: l3.sort, limit: l3.limit + 96 }); } }, 'Show ' + Math.min(96, L.filtered.length - L.shown.length) + ' more'));
+  }
+  function BrandStage(props) {
+    var t = T[props.r.type], b = B[props.r.brand], L = listFor(props), ps = L.shown;
+    useChunks(chunksFor(ps));
+    return h('div', { className: dcls(t.domain) },
+      h('div', { className: 'dhead' }, h('h2', null, b.name), h('span', { className: 'muted small' }, plural(L.all.length, 'model') + ' · ' + t.name)),
+      h(ListTools, props),
+      !ps.length && h('p', { className: 'muted' }, 'No models match \u201c' + props.l3.q + '\u201d.'),
+      h('div', { className: 'grid grid--wide' }, ps.map(function (p) {
+        var k = 'p:' + p.id;
+        return h(P.Card, Object.assign({ key: p.id, domain: t.domain, href: productHref(p), className: props.hover === k ? 'is-twin' : '',
+          media: ProductMedia(p), title: p.name, meta: p.first_launched ? 'First launched ' + p.first_launched : 'Launch year not in dataset' }, twinProps(k, props.hover, props.setHover)),
+          h('div', { className: 'card-foot' }, p.market_status ? h(P.StatusPill, { status: p.market_status }) : h('span', { className: 'muted small' }, 'Status not in dataset'),
+            p.current_price_usd != null ? h('span', { className: 'price-sm' }, usdShort(p.current_price_usd)) : h('span', { className: 'muted small' }, p.source === 'curated' ? 'Not sold new' : 'Price not in dataset')));
+      })),
+      h(MoreButton, props));
+  }
+  function BrandNav(props) {
+    var t = T[props.r.type], b = B[props.r.brand], L = listFor(props), ps = L.shown;
+    function v(x) { return x || nul('Not in dataset'); }
+    return h(R.Fragment, null,
+      h('div', { className: dcls(t.domain) },
+        h('p', { className: 'eyebrow' }, t.name),
+        h('div', { style: { display: 'flex', alignItems: 'center', gap: 16, marginTop: 8 } },
+          h(P.MonogramBadge, { name: b.name, monogram: b.logo.monogram, color: b.logo.monogram_color, imageUrl: b.logo.image_url, size: 48, showName: false }),
+          h('h1', { className: 'h1', style: { margin: 0 } }, b.name)),
+        brandTypes(b.id).length > 1 && h('p', { style: { margin: '12px 0 0' } }, h('a', { className: 'extlink', href: brandHref(b.id) }, 'See all ' + (BRAND_TOTAL[b.id] || 0).toLocaleString('en-US') + ' ' + b.name + ' models across ' + brandTypes(b.id).length + ' vehicle types \u2192'))),
+      h('div', { className: 'section' },
+        h('h2', { className: 'h2' }, 'Models in ' + t.name),
+        h(ListTools, props),
+        ps.map(function (p) {
+          var k = 'p:' + p.id;
+          return h('div', Object.assign({ key: p.id, className: 'prod' + (props.hover === k ? ' is-twin' : '') }, twinProps(k, props.hover, props.setHover)),
+            h('button', { className: 'prod-name', onClick: function () { go(productHref(p)); } }, p.name, Icon('next')),
+            h('div', { className: 'chips', role: 'group', 'aria-label': p.name + ' timeline years' }, (p.timeline || []).map(function (e, i) {
+              return h(P.FilterChip, { key: i, title: e.year + ': ' + e.event, 'aria-label': e.year + ': ' + e.event + '. Open ' + p.name, onClick: function () { go(productHref(p, e.year)); } }, e.year);
+            })));
+        }),
+        h(MoreButton, props)),
+      h(Websites, { b: b }),
+      h('div', { className: 'section' },
+        h('h2', { className: 'h2' }, 'Brand profile'),
+        h('dl', { className: 'kv' },
+          h('dt', null, 'Parent company'), h('dd', null, v(b.parent_company)),
+          h('dt', null, 'Founded'), h('dd', null, v(b.founded_detail)),
+          h('dt', null, 'Founders'), h('dd', null, v(b.founders)),
+          h('dt', null, 'Headquarters'), h('dd', null, v(b.headquarters)),
+          h('dt', null, 'First vehicle'), h('dd', null, v(b.first_vehicle_or_product)),
+          h('dt', null, 'Company status'), h('dd', null, v(b.company_status)))),
+      h('div', { className: 'section' },
+        h('h2', { className: 'h2' }, 'Brand evolution'),
+        b.evolution_milestones && b.evolution_milestones.length ? h(P.Timeline, { items: b.evolution_milestones }) : nul('No milestones in dataset')),
+      h('div', { className: 'section' },
+        h('h2', { className: 'h2' }, 'Availability by region'),
+        h(P.AvailabilityGrid, { regions: b.availability_by_region || {}, order: REGIONS, note: b.key_markets_note })));
+  }
+
+  // ---------- Brand: every model across all types ----------
+  function allFor(props) {
+    var id = props.r.brand, l3 = props.l3, types = brandTypes(id), all = [];
+    types.forEach(function (tid) { all = all.concat(productsOf(tid, id)); });
+    var f = filterProducts(all, l3.q);
+    if (l3.tf) f = f.filter(function (p) { return p.type_id === l3.tf; });
+    if (l3.sort !== 'data') f = sortProducts(f, l3.sort);
+    return { types: types, all: all, filtered: f, shown: l3.limit === Infinity ? f : f.slice(0, l3.limit) };
+  }
+  function AllTools(props) {
+    var l3 = props.l3, set = props.setL3, L = allFor(props), b = B[props.r.brand];
+    function upd(o) { set(Object.assign({ q: l3.q, sort: l3.sort, limit: 96, tf: l3.tf }, o)); }
+    return h('div', { className: 'listtools' },
+      h('label', { className: 'mini-field', htmlFor: props.idp + 'af' }, h('span', { className: 'sr' }, 'Filter ' + b.name + ' models'),
+        h('input', { id: props.idp + 'af', type: 'search', placeholder: 'Filter all ' + L.all.length.toLocaleString('en-US') + ' ' + b.name + ' models', value: l3.q, onChange: function (e) { upd({ q: e.target.value }); } })),
+      L.types.length > 1 && h('label', { className: 'sort', htmlFor: props.idp + 'at' }, 'Type',
+        h('select', { id: props.idp + 'at', value: l3.tf || '', onChange: function (e) { upd({ tf: e.target.value || null }); } },
+          h('option', { value: '' }, 'All types'), L.types.map(function (tid) { return h('option', { key: tid, value: tid }, T[tid].name + ' (' + brandCount(tid, props.r.brand) + ')'); }))),
+      h('label', { className: 'sort', htmlFor: props.idp + 'as' }, 'Sort',
+        h('select', { id: props.idp + 'as', value: l3.sort, onChange: function (e) { upd({ sort: e.target.value }); } },
+          h('option', { value: 'data' }, 'By vehicle type'), h('option', { value: 'oldest' }, 'Oldest first'), h('option', { value: 'newest' }, 'Newest first'), h('option', { value: 'name' }, 'Name A–Z'), h('option', { value: 'photo' }, 'With photo first'))),
+      h('span', { className: 'muted small' }, 'Showing ' + L.shown.length.toLocaleString('en-US') + ' of ' + L.filtered.length.toLocaleString('en-US')));
+  }
+  function AllMore(props) {
+    var L = allFor(props), l3 = props.l3;
+    if (L.shown.length >= L.filtered.length) return null;
+    var base = { q: l3.q, sort: l3.sort, tf: l3.tf };
+    return h('div', { className: 'more' },
+      h(P.Button, { onClick: function () { props.setL3(Object.assign({}, base, { limit: l3.limit + 192 })); } }, 'Show ' + Math.min(192, L.filtered.length - L.shown.length) + ' more'),
+      h(P.Button, { variant: 'ghost', onClick: function () { props.setL3(Object.assign({}, base, { limit: Infinity })); } }, 'Show all ' + L.filtered.length.toLocaleString('en-US')));
+  }
+  function BrandAllStage(props) {
+    var b = B[props.r.brand], L = allFor(props), ps = L.shown;
+    useChunks(chunksFor(ps));
+    var out = [], lastT = null, grouped = props.l3.sort === 'data';
+    ps.forEach(function (p) {
+      var t = T[p.type_id];
+      if (grouped && p.type_id !== lastT) { lastT = p.type_id; out.push(h('h3', { key: 'h' + p.type_id, className: 'grouphead ' + dcls(t.domain) }, h('span', null, t.name), h('a', { className: 'extlink small', href: href(t.id, b.id) }, brandCount(t.id, b.id).toLocaleString('en-US') + ' models \u2192'))); }
+      var k = 'p:' + p.id;
+      out.push(h(P.Card, Object.assign({ key: p.id, domain: t.domain, href: productHref(p), className: props.hover === k ? 'is-twin' : '',
+        media: ProductMedia(p), title: p.name, meta: (grouped ? '' : t.name + ' \u00b7 ') + (p.first_launched ? 'First launched ' + p.first_launched : 'Launch year not in dataset') }, twinProps(k, props.hover, props.setHover)),
+        h('div', { className: 'card-foot' }, p.market_status ? h(P.StatusPill, { status: p.market_status }) : h('span', { className: 'muted small' }, 'Status not in dataset'),
+          p.current_price_usd != null ? h('span', { className: 'price-sm' }, usdShort(p.current_price_usd)) : null)));
+    });
+    return h('div', null,
+      h('div', { className: 'dhead' }, h('h2', null, b.name), h('span', { className: 'muted small' }, 'All ' + L.all.length.toLocaleString('en-US') + ' models \u00b7 ' + plural(L.types.length, 'vehicle type'))),
+      h(AllTools, Object.assign({ idp: 's' }, props)),
+      !ps.length && h('p', { className: 'muted' }, 'No models match.'),
+      h('div', { className: 'grid grid--wide' }, out),
+      h(AllMore, props));
+  }
+  function BrandAllNav(props) {
+    var b = B[props.r.brand], L = allFor(props);
+    function v(x) { return x || nul('Not in dataset'); }
+    return h(R.Fragment, null,
+      h('div', null,
+        h('p', { className: 'eyebrow' }, 'Brand \u00b7 every model'),
+        h('div', { style: { display: 'flex', alignItems: 'center', gap: 16, marginTop: 8 } },
+          h(P.MonogramBadge, { name: b.name, monogram: b.logo.monogram, color: b.logo.monogram_color, imageUrl: b.logo.image_url, size: 48, showName: false }),
+          h('h1', { className: 'h1', style: { margin: 0 } }, b.name)),
+        h('p', { className: 'lede muted' }, L.all.length.toLocaleString('en-US') + ' models across ' + plural(L.types.length, 'vehicle type') + (b.headquarters ? ' \u00b7 ' + b.headquarters : ''))),
+      h('div', { className: 'section' },
+        h('h2', { className: 'h2' }, 'By vehicle type'),
+        h('ul', { className: 'rows' }, L.types.map(function (tid) {
+          var t = T[tid];
+          return h('li', { key: tid }, h('button', { className: 'row ' + dcls(t.domain), onClick: function () { go(href(tid, b.id)); } },
+            h('span', { className: 'name' }, t.name), h('span', { className: 'cat' }, t.domain + ' \u00b7 ' + t.category), h('span', { className: 'count' }, plural(brandCount(tid, b.id), 'model'))));
+        }))),
+      h('div', { className: 'section' },
+        h('h2', { className: 'h2' }, 'All models'),
+        h(AllTools, Object.assign({ idp: 'n' }, props)),
+        h('ul', { className: 'rows' }, L.shown.map(function (p) {
+          var k = 'p:' + p.id;
+          return h('li', { key: p.id }, h('button', Object.assign({ className: 'row' + (props.hover === k ? ' is-twin' : ''), onClick: function () { go(productHref(p)); } }, twinProps(k, props.hover, props.setHover)),
+            h('span', { className: 'name' }, p.name), h('span', { className: 'cat' }, T[p.type_id].name + (p.first_launched ? ' \u00b7 ' + p.first_launched : '')), h('span', { className: 'count' }, p.img_chunk ? 'Photo' : '')));
+        })),
+        h(AllMore, props)),
+      b.parent_company || b.founded_detail ? h('div', { className: 'section' },
+        h('h2', { className: 'h2' }, 'Brand profile'),
+        h('dl', { className: 'kv' },
+          h('dt', null, 'Parent company'), h('dd', null, v(b.parent_company)),
+          h('dt', null, 'Founded'), h('dd', null, v(b.founded_detail)),
+          h('dt', null, 'Headquarters'), h('dd', null, v(b.headquarters)),
+          h('dt', null, 'Company status'), h('dd', null, v(b.company_status)))) : null,
+      h(Websites, { b: b }));
+  }
+
+  // ---------- Level 4 ----------
+  function ProductStage(props) {
+    var p = PR[props.r.product], t = T[p.type_id];
+    useChunks(p.img_chunk ? [p.img_chunk] : []);
+    var cr = p.image_credit, file = p.image;
+    var fileUrl = file ? 'https://commons.wikimedia.org/wiki/File:' + encodeURIComponent(file.replace(/ /g, '_')) : null;
+    return h('div', { className: 'viewer ' + dcls(t.domain) },
+      IMG[p.id] ? h('figure', { className: 'photo-frame' },
+        h('img', { src: IMG[p.id], alt: p.name + ' (' + t.name + ')' }),
+        h('figcaption', { className: 'credit' }, 'Photo: ', cr && cr.artist ? cr.artist : 'see file page', cr && cr.license ? ' · ' + cr.license : '', ' · ', ext(fileUrl, 'Wikimedia Commons')))
+      : h('div', { className: 'viewer-box' }, h('div', null,
+        h('div', { className: 'body', style: { background: p.model_3d.body_color || 'var(--surface-200)' }, 'aria-hidden': true }, t.icon_emoji),
+        h('p', { className: 'soon' }, p.img_chunk ? 'Loading photo' : p.image ? 'Photo being added' : 'No free photo yet'),
+        h('p', { className: 'muted small' }, file && !p.img_chunk ? 'A Commons photo exists and is still being added.' : 'No freely licensed photo of this model on Wikimedia Commons yet.'))),
+      h('p', { className: 'muted small', style: { margin: 0 } }, '3D viewer coming next: a representative model of a ' + t.name + ', not an exact replica of ' + p.name + '.'));
+  }
+  function ProductNav(props) {
+    var p = PR[props.r.product], t = T[p.type_id], b = B[p.brand_id];
+    var sib = productsOf(t.id, b.id), i = sib.findIndex(function (x) { return x.id === p.id; });
+    var hasBoth = p.launch_price_usd != null && p.current_price_usd != null;
+    var diff = hasBoth ? p.current_price_usd - p.launch_price_usd : 0;
+    var hi = props.r.year != null ? props.r.year : null;
+    var spec = p.specs || {};
+    function sv(x) { return x || nul('Not in dataset'); }
+    return h(R.Fragment, null,
+      h('div', { className: dcls(t.domain) },
+        h('p', { className: 'eyebrow' }, b.name + ' · ' + t.name),
+        h('h1', { className: 'h1' }, p.name),
+        h('div', { style: { marginTop: 12 } }, p.market_status ? h(P.StatusPill, { status: p.market_status }) : h('span', { className: 'muted small' }, 'Sale status not in dataset'))),
+      h('dl', { className: 'facts' },
+        h('div', null, h('dt', null, 'First launched'), h('dd', null, p.first_launched || nul('Not in dataset'))),
+        h('div', null, h('dt', null, 'Latest generation'), h('dd', null, sv(p.latest_generation))),
+        h('div', null, h('dt', null, 'Market status'), h('dd', null, sv(p.market_status))),
+        h('div', null, h('dt', null, 'Available new today'), h('dd', null, p.available_new_today == null ? nul('Not in dataset') : p.available_new_today ? 'Yes' : 'No'))),
+      h('div', { className: 'section' },
+        h('h2', { className: 'h2' }, 'Price'),
+        h('div', { className: 'prices' },
+          h('div', { className: 'price' }, h('span', { className: 'lbl' }, 'Launch price'),
+            p.launch_price_usd != null ? h('span', { className: 'val' }, usd(p.launch_price_usd)) : h('span', { className: 'val null' }, 'Launch price not published'),
+            p.launch_price_note && h('span', { className: 'muted small' }, p.launch_price_note)),
+          h('div', { className: 'price' }, h('span', { className: 'lbl' }, 'Current price'),
+            p.current_price_usd != null ? h('span', { className: 'val' }, usd(p.current_price_usd)) : h('span', { className: 'val null' }, p.source === 'curated' ? 'Not sold new today' : 'Not in dataset'),
+            p.current_price_note && h('span', { className: 'muted small' }, p.current_price_note)),
+          hasBoth ? h('div', { className: 'delta' }, h('span', null, 'Price change since launch'),
+            h('b', null, (diff >= 0 ? '+' : '−') + usd(Math.abs(diff)) + ' (' + (diff >= 0 ? '+' : '−') + Math.abs(diff / p.launch_price_usd * 100).toLocaleString('en-US', { maximumFractionDigits: 0 }) + '%)'),
+            h('span', { className: 'muted small' }, 'nominal, not inflation-adjusted'))
+            : h('div', { className: 'delta' }, h('span', { className: 'muted small' }, 'Price change since launch: not available, because the launch and current prices are not both published.')),
+          p.recorded_price && h('div', { className: 'delta ref' }, h('span', null, 'Recorded price'),
+            h('b', null, Number(p.recorded_price.amount).toLocaleString('en-US') + ' ' + (p.recorded_price.unit || '')),
+            h('span', { className: 'muted small' }, 'as recorded in Wikidata, in its original currency; not converted')),
+          p.current_price_usd == null && h('div', { className: 'delta ref' }, h('span', null, 'Reference price'),
+            p.reference_price_usd != null ? h('b', null, usd(p.reference_price_usd)) : nul('Not published'),
+            h('span', { className: 'muted small' }, 'latest known base or unit price, not a current sale price')))),
+      h('div', { className: 'section' },
+        h('h2', { className: 'h2' }, 'Specifications'),
+        h('dl', { className: 'kv' },
+          h('dt', null, 'Powertrain / engine'), h('dd', null, sv(spec.powertrain)),
+          h('dt', null, 'Performance'), h('dd', null, sv(spec.performance)),
+          h('dt', null, 'Capacity / size'), h('dd', null, sv(spec.capacity_size)),
+          h('dt', null, 'Key features'), h('dd', null, sv(spec.key_features)))),
+      h('div', { className: 'section' },
+        h('h2', { className: 'h2' }, 'Evolution'),
+        p.timeline && p.timeline.length ? h(P.Timeline, { items: p.timeline, highlight: hi }) : nul('No timeline in dataset')),
+      h('div', { className: 'section' },
+        h('h2', { className: 'h2' }, 'Where it’s available'),
+        h('p', { className: 'muted small', style: { margin: 0 } }, 'Brand-level availability for ' + b.name + '.'),
+        h(P.AvailabilityGrid, { regions: b.availability_by_region || {}, order: REGIONS, note: b.key_markets_note })),
+      h('div', { className: 'section' },
+        h('h2', { className: 'h2' }, 'Sources'),
+        h('ul', { className: 'srcs' },
+          h('li', null, p.source === 'curated' ? 'Prices, status and specs: original Vehicle Universe dataset.' : p.source === 'spreadsheet' ? 'Model facts: your Vehicle Brands & Models spreadsheets (Wikidata export). Prices and sale status are rarely recorded there.' : 'Model facts: Wikidata (CC0). Prices and sale status are not recorded there.'),
+          p.model_website && h('li', null, 'Model website: ', ext(p.model_website)),
+          p.manufacturers && h('li', null, 'Manufacturer(s) recorded: ' + p.manufacturers),
+          p.wikipedia && h('li', null, ext(p.wikipedia, 'Wikipedia article')),
+          p.wikidata && h('li', null, ext('https://www.wikidata.org/wiki/' + p.wikidata, 'Wikidata item ' + p.wikidata)),
+          p.image && h('li', null, 'Photo: ', ext('https://commons.wikimedia.org/wiki/File:' + encodeURIComponent(p.image.replace(/ /g, '_')), p.image)))),
+      h('div', null, h(P.ConfidenceBadge, { level: p.data_confidence })),
+      h('div', { className: 'pager' },
+        h(P.Button, { disabled: i <= 0, onClick: function () { go(productHref(sib[i - 1])); }, 'aria-label': i > 0 ? 'Previous: ' + sib[i - 1].name : 'No previous product' }, Icon('back'), 'Previous'),
+        h('span', { className: 'muted small' }, (i + 1) + ' of ' + sib.length + ' from ' + b.name),
+        h(P.Button, { disabled: i >= sib.length - 1, onClick: function () { go(productHref(sib[i + 1])); }, 'aria-label': i < sib.length - 1 ? 'Next: ' + sib[i + 1].name : 'No next product' }, 'Next', Icon('next'))));
+  }
+
+  // ---------- Search box ----------
+  function Search() {
+    var s = useState(''), q = s[0], setQ = s[1];
+    var o = useState(false), open = o[0], setOpen = o[1];
+    var a = useState(0), act = a[0], setAct = a[1];
+    var sv = useState(0), sver = sv[0], bumpS = sv[1];
+    useEffect(function () { var f = function () { bumpS(function (x) { return x + 1; }); }; searchListeners.push(f); return function () { searchListeners = searchListeners.filter(function (g) { return g !== f; }); }; }, []);
+    var groups = useMemo(function () { return search(q); }, [q, sver]);
+    var flat = []; groups.forEach(function (g) { g.items.forEach(function (it) { flat.push(it); }); });
+    var wrap = useRef(null);
+    useEffect(function () {
+      function f(e) { if (wrap.current && !wrap.current.contains(e.target)) setOpen(false); }
+      document.addEventListener('mousedown', f); return function () { document.removeEventListener('mousedown', f); };
+    }, []);
+    function pick(it) { go(it.to); setQ(''); setOpen(false); }
+    var n = -1;
+    return h('div', { className: 'search-wrap', ref: wrap },
+      h(P.SearchField, { id: 'q', label: 'Search types, brands and products', value: q, autoComplete: 'off', role: 'combobox', 'aria-expanded': open && !!q, 'aria-controls': 'results',
+        onChange: function (e) { setQ(e.target.value); setOpen(true); setAct(0); },
+        onFocus: function () { setOpen(true); loadSearch(); },
+        onKeyDown: function (e) {
+          if (e.key === 'ArrowDown') { e.preventDefault(); setAct(Math.min(act + 1, flat.length - 1)); }
+          else if (e.key === 'ArrowUp') { e.preventDefault(); setAct(Math.max(act - 1, 0)); }
+          else if (e.key === 'Enter' && flat[act]) pick(flat[act]);
+          else if (e.key === 'Escape') setOpen(false);
+        } }),
+      open && q.trim() && h('div', { className: 'results', id: 'results', role: 'listbox' },
+        groups.length ? groups.map(function (g) {
+          return h('div', { key: g.kind }, h('h3', null, g.kind), g.items.map(function (it) {
+            n++; var mine = n;
+            return h('button', { key: it.to + it.label, role: 'option', 'aria-selected': mine === act, className: mine === act ? 'is-active' : '', onMouseDown: function (e) { e.preventDefault(); }, onClick: function () { pick(it); } },
+              h('span', null, it.label), h('span', null, it.sub));
+          }));
+        }) : h('p', { className: 'empty' }, 'Nothing matches “' + q + '”. Try a type (“rocket”), a brand or a model name.')));
+  }
+
+  // ---------- theme ----------
+  function initialTheme() {
+    try { var s = localStorage.getItem('vu-theme'); if (s === 'light' || s === 'dark') return s; } catch (e) {}
+    var stamped = document.documentElement.getAttribute('data-theme');
+    if (stamped === 'light' || stamped === 'dark') return stamped;
+    return 'dark';
+  }
+
+  // ---------- App ----------
+  function App() {
+    var rs = useState(parse(location.hash)), r = rs[0], setR = rs[1];
+    var hs = useState(null), hover = hs[0], setHover = hs[1];
+    var fs = useState('All'), filter = fs[0], setFilter = fs[1];
+    var ss = useState('data'), sort = ss[0], setSort = ss[1];
+    var ts = useState(initialTheme), theme = ts[0], setTheme = ts[1];
+    var stage = useRef(null), nav = useRef(null);
+    useEffect(function () {
+      function f() { setR(parse(location.hash)); setHover(null); if (stage.current) stage.current.scrollTop = 0; if (nav.current) nav.current.scrollTop = 0; }
+      window.addEventListener('hashchange', f); return function () { window.removeEventListener('hashchange', f); };
+    }, []);
+    var tl = useState(0), bumpT = tl[1];
+    useEffect(function () { var f = function () { bumpT(function (x) { return x + 1; }); setR(parse(location.hash)); }; typeListeners.push(f); return function () { typeListeners = typeListeners.filter(function (g) { return g !== f; }); }; }, []);
+    useEffect(function () { if (r.type) loadType(r.type); if (r.level === 5) brandTypes(r.brand).forEach(loadType); }, [r.type, r.level, r.brand]);
+    useEffect(function () { var id = setTimeout(loadSearch, 1500); return function () { clearTimeout(id); }; }, []);
+    useEffect(function () { document.documentElement.setAttribute('data-theme', theme); try { localStorage.setItem('vu-theme', theme); } catch (e) {} }, [theme]);
+
+    var groups = useMemo(function () { return visibleTypes(filter, sort); }, [filter, sort]);
+    var t = r.type && T[r.type], b = r.brand && B[r.brand], p = r.product && PR[r.product];
+    var crumbs = [{ label: 'Home', href: '#/', onClick: function () { setFilter('All'); } }];
+    if (t) {
+      crumbs.push({ label: t.domain, href: '#/', domain: t.domain, onClick: function () { setFilter(t.domain); } });
+      crumbs.push({ label: t.name, href: href(t.id), domain: t.domain });
+    }
+    if (b && r.level === 5) crumbs.push({ label: b.name + ' \u2014 all models', href: brandHref(b.id) });
+    else if (b) crumbs.push({ label: b.name, href: href(t.id, b.id), domain: t.domain });
+    if (p) crumbs.push({ label: p.name, href: productHref(p), domain: t.domain });
+    if (crumbs.length === 1) crumbs[0] = { label: 'Home' };
+    var parent = r.level === 4 ? href(r.type, r.brand) : r.level === 3 ? href(r.type) : '#/';
+    function back() { go(parent); }
+
+    var l3s = useState({ q: '', sort: 'data', limit: 48, key: '' }), l3 = l3s[0], setL3raw = l3s[1];
+    var l3key = (r.level === 5 ? 'all' : r.type) + '/' + r.brand;
+    if (l3.key !== l3key) { l3 = { q: '', sort: 'data', limit: r.level === 5 ? 96 : 48, key: l3key, tf: null }; }
+    function setL3(v) { setL3raw(Object.assign({ key: l3key }, v)); }
+    var l2s = useState({ q: '', sort: 'data', limit: 60, key: '' }), l2 = l2s[0], setL2raw = l2s[1];
+    if (l2.key !== r.type) { l2 = { q: '', sort: 'data', limit: 60, key: r.type }; }
+    function setL2(v) { setL2raw(Object.assign({ key: r.type }, v)); }
+    var sp = { r: r, hover: hover, setHover: setHover, l3: l3, setL3: setL3, l2: l2, setL2: setL2 };
+    var pending = r.level === 5 ? brandTypes(r.brand).filter(function (x) { return !PRODUCTS[x]; }) : (r.level >= 3 && !PRODUCTS[r.type] ? [r.type] : []);
+    var needs = pending.length > 0;
+    var failed = pending.some(function (x) { return !TYPE_LOAD[x]; });
+    function Loading() { return h('div', { className: 'boot' }, h('div', null, h('b', null, 'Loading'), failed ? 'Could not load this section. Reload to try again.' : r.level === 5 ? 'Collecting every ' + B[r.brand].name + ' model from ' + plural(brandTypes(r.brand).length, 'vehicle type') + '\u2026' : 'Fetching every ' + T[r.type].name.toLowerCase() + ' model\u2026')); }
+    var Stage = needs ? Loading : [null, HomeStage, TypeStage, BrandStage, ProductStage, BrandAllStage][r.level];
+    var Nav = needs ? function () { return null; } : [null, HomeNav, TypeNav, BrandNav, ProductNav, BrandAllNav][r.level];
+    var key = location.hash || '#/';
+    document.title = 'Vehicle Universe';
+
+    return h(R.Fragment, null,
+      h('header', { className: 'top' },
+        h('a', { className: 'brand', href: '#/', 'aria-label': 'Vehicle Universe by Pujiverse, home' },
+          h('span', { className: 'logo-chip' }, h('img', { className: 'lockup', src: window.VU_LOCKUP, alt: '' }), h('img', { className: 'mark', src: window.VU_MARK, alt: '' })),
+          h('span', { className: 'site-title' }, h('b', null, 'Vehicle Universe'), h('span', null, 'by Pujiverse'))),
+        h(Search),
+        h('div', { className: 'tools' },
+          h(P.Button, { className: 'icon-btn', 'aria-label': theme === 'dark' ? 'Switch to light theme' : 'Switch to dark theme', title: theme === 'dark' ? 'Light theme' : 'Dark theme', onClick: function () { setTheme(theme === 'dark' ? 'light' : 'dark'); } }, Icon(theme === 'dark' ? 'sun' : 'moon')))),
+      h('div', { className: 'navrow' },
+        h(P.Button, { variant: 'ghost', size: 'sm', disabled: r.level === 1, onClick: back, 'aria-label': 'Back' }, Icon('back'), 'Back'),
+        h(P.Breadcrumb, { items: crumbs })),
+      h('main', { className: 'split' },
+        h('section', { className: 'stage', ref: stage, 'aria-label': 'Visual stage' }, h('div', { className: 'fade', key: 's' + key }, h(Stage, Object.assign({ groups: groups }, sp)))),
+        h('section', { className: 'nav', ref: nav, 'aria-label': 'Navigator' },
+          h(R.Fragment, { key: 'n' + key }, h(Nav, Object.assign({ groups: groups, filter: filter, setFilter: setFilter, sort: sort, setSort: setSort }, sp))),
+          h('p', { className: 'foot' }, 'Data snapshot mid-2026. Curated prices are approximate and converted to USD; launch prices are nominal. The full model catalogue comes from Wikidata (CC0) and the owner\u2019s Vehicle Brands & Models spreadsheets, which list individual vessels, locomotives and museum exhibits where Wikidata records them; photos come from Wikimedia Commons under their own free licences, credited on each photo. Brand names and logos belong to their owners, and monogram colours are generated, not brand colours. Informational use only.'))));
+  }
+
+  ReactDOM.createRoot(document.getElementById('app')).render(h(App));
+}
+
+</script>
+<script>
+(function () {
+  var app = document.getElementById('app');
+  app.innerHTML = '<div class="boot"><div><b>Vehicle Universe</b>Loading the catalogue…</div></div>';
+  function j(u) { return fetch(u).then(function (r) { if (!r.ok) throw new Error(u + ' ' + r.status); return r.json(); }); }
+  Promise.all([j('data/core.json'), j('data/tiles.json').catch(function () { return {}; })])
+    .then(function (a) { app.innerHTML = ''; VU_BOOT(a[0], a[1]); })
+    .catch(function (e) { app.innerHTML = '<div class="boot"><div><b>Could not load the catalogue</b>Reload the page to try again. (' + e.message + ')</div></div>'; });
+})();
+</script>
+
+</body>
+</html>
