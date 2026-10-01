@@ -302,6 +302,8 @@ button { font: inherit; }
 .grouphead:first-child { margin-top: 0; }
 .grouphead .extlink { font: 600 13px/18px var(--font-sans); letter-spacing: 0; text-transform: none; }
 .more { gap: var(--space-3); flex-wrap: wrap; }
+.homebtn { text-decoration: none; }
+.navrow .homebtn + .pv-btn { margin-left: calc(-1 * var(--space-2)); }
 
 </style>
 <div id="app"></div>
@@ -478,6 +480,7 @@ function VU_BOOT(D, TILES) {
   D.vehicle_types.forEach(function (t) { typeStats[t.id] = t.stats; var bc = (t.stats && t.stats.brand_counts) || {}; Object.keys(bc).forEach(function (k) { BRAND_TOTAL[k] = (BRAND_TOTAL[k] || 0) + bc[k]; }); });
   function brandTypes(id) { return D.vehicle_types.filter(function (t) { return brandCount(t.id, id) > 0; }).map(function (t) { return t.id; }); }
 
+  var PUJI = 'https://www.pujiverse.com/';
   // ---------- formatting ----------
   var nf = new Intl.NumberFormat('en-US', { style: 'currency', currency: 'USD', maximumFractionDigits: 0 });
   function usd(v) { return v == null ? null : nf.format(v); }
@@ -584,7 +587,7 @@ function VU_BOOT(D, TILES) {
   // ---------- small views ----------
   function Icon(name) {
     var p = { sun: 'M12 4V2M12 22v-2M4 12H2M22 12h-2M5.6 5.6 4.2 4.2M19.8 19.8l-1.4-1.4M5.6 18.4l-1.4 1.4M19.8 4.2l-1.4 1.4',
-      moon: 'M20 14.5A8 8 0 0 1 9.5 4a8 8 0 1 0 10.5 10.5Z', back: 'M15 18l-6-6 6-6', chev: 'M6 9l6 6 6-6', next: 'M9 18l6-6-6-6' }[name];
+      moon: 'M20 14.5A8 8 0 0 1 9.5 4a8 8 0 1 0 10.5 10.5Z', back: 'M15 18l-6-6 6-6', home: 'M3 11l9-7 9 7M5 10v10h5v-6h4v6h5V10', chev: 'M6 9l6 6 6-6', next: 'M9 18l6-6-6-6' }[name];
     return h('svg', { viewBox: '0 0 24 24', width: 18, height: 18, fill: 'none', stroke: 'currentColor', strokeWidth: 2, strokeLinecap: 'round', strokeLinejoin: 'round', 'aria-hidden': true, className: name === 'chev' ? 'chev' : undefined },
       name === 'sun' && h('circle', { cx: 12, cy: 12, r: 4 }), h('path', { d: p }));
   }
@@ -1055,7 +1058,7 @@ function VU_BOOT(D, TILES) {
 
     var groups = useMemo(function () { return visibleTypes(filter, sort); }, [filter, sort]);
     var t = r.type && T[r.type], b = r.brand && B[r.brand], p = r.product && PR[r.product];
-    var crumbs = [{ label: 'Home', href: '#/', onClick: function () { setFilter('All'); } }];
+    var crumbs = [{ label: 'Vehicle Universe', href: '#/', onClick: function () { setFilter('All'); } }];
     if (t) {
       crumbs.push({ label: t.domain, href: '#/', domain: t.domain, onClick: function () { setFilter(t.domain); } });
       crumbs.push({ label: t.name, href: href(t.id), domain: t.domain });
@@ -1063,7 +1066,7 @@ function VU_BOOT(D, TILES) {
     if (b && r.level === 5) crumbs.push({ label: b.name + ' \u2014 all models', href: brandHref(b.id) });
     else if (b) crumbs.push({ label: b.name, href: href(t.id, b.id), domain: t.domain });
     if (p) crumbs.push({ label: p.name, href: productHref(p), domain: t.domain });
-    if (crumbs.length === 1) crumbs[0] = { label: 'Home' };
+    if (crumbs.length === 1) crumbs[0] = { label: 'Vehicle Universe' };
     var parent = r.level === 4 ? href(r.type, r.brand) : r.level === 3 ? href(r.type) : '#/';
     function back() { go(parent); }
 
@@ -1086,20 +1089,21 @@ function VU_BOOT(D, TILES) {
 
     return h(R.Fragment, null,
       h('header', { className: 'top' },
-        h('a', { className: 'brand', href: '#/', 'aria-label': 'Vehicle Universe by Pujiverse, home' },
+        h('a', { className: 'brand', href: PUJI, title: 'Go to PUJIVERSE home', 'aria-label': 'Go to PUJIVERSE home (pujiverse.com)' },
           h('span', { className: 'logo-chip' }, h('img', { className: 'lockup', src: window.VU_LOCKUP, alt: '' }), h('img', { className: 'mark', src: window.VU_MARK, alt: '' })),
           h('span', { className: 'site-title' }, h('b', null, 'Vehicle Universe'), h('span', null, 'by Pujiverse'))),
         h(Search),
         h('div', { className: 'tools' },
           h(P.Button, { className: 'icon-btn', 'aria-label': theme === 'dark' ? 'Switch to light theme' : 'Switch to dark theme', title: theme === 'dark' ? 'Light theme' : 'Dark theme', onClick: function () { setTheme(theme === 'dark' ? 'light' : 'dark'); } }, Icon(theme === 'dark' ? 'sun' : 'moon')))),
       h('div', { className: 'navrow' },
+        h('a', { className: 'pv-btn pv-btn--ghost pv-btn--sm homebtn', href: PUJI, title: 'Go to PUJIVERSE home' }, Icon('home'), 'Home'),
         h(P.Button, { variant: 'ghost', size: 'sm', disabled: r.level === 1, onClick: back, 'aria-label': 'Back' }, Icon('back'), 'Back'),
         h(P.Breadcrumb, { items: crumbs })),
       h('main', { className: 'split' },
         h('section', { className: 'stage', ref: stage, 'aria-label': 'Visual stage' }, h('div', { className: 'fade', key: 's' + key }, h(Stage, Object.assign({ groups: groups }, sp)))),
         h('section', { className: 'nav', ref: nav, 'aria-label': 'Navigator' },
           h(R.Fragment, { key: 'n' + key }, h(Nav, Object.assign({ groups: groups, filter: filter, setFilter: setFilter, sort: sort, setSort: setSort }, sp))),
-          h('p', { className: 'foot' }, 'Data snapshot mid-2026. Curated prices are approximate and converted to USD; launch prices are nominal. The full model catalogue comes from Wikidata (CC0) and the owner\u2019s Vehicle Brands & Models spreadsheets, which list individual vessels, locomotives and museum exhibits where Wikidata records them; photos come from Wikimedia Commons under their own free licences, credited on each photo. Brand names and logos belong to their owners, and monogram colours are generated, not brand colours. Informational use only.'))));
+          h('p', { className: 'foot' }, h('a', { className: 'extlink', href: PUJI }, 'Visit pujiverse.com \u2192'), ' ', 'Data snapshot mid-2026. Curated prices are approximate and converted to USD; launch prices are nominal. The full model catalogue comes from Wikidata (CC0) and the owner\u2019s Vehicle Brands & Models spreadsheets, which list individual vessels, locomotives and museum exhibits where Wikidata records them; photos come from Wikimedia Commons under their own free licences, credited on each photo. Brand names and logos belong to their owners, and monogram colours are generated, not brand colours. Informational use only.'))));
   }
 
   ReactDOM.createRoot(document.getElementById('app')).render(h(App));
